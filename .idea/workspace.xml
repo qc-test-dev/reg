@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="b32cd405-bea6-4fb8-a02b-baeead60e78b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/common_functionatilies/variables.robot" beforeDir="false" afterPath="$PROJECT_DIR$/resources/common_functionatilies/variables.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testCases/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/testCases/log.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testCases/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testCases/output.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testCases/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/testCases/report.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,14 +28,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "last_opened_file_path": "C:/Users/Jasso/Desktop/FCS",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Jasso/Desktop/FCS&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python.regFcs.robot">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="FCS" />

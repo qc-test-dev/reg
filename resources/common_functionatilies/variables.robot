@@ -1,8 +1,7 @@
 *** Variables ***
 
-${browser}   Chrome
+${browser}   Edge
 ${browser_headless}              headlesschrome
-
 
 ${localpath}               /Users/Jasso/Desktop/FCS
 ${screenshots-folder}      ${localpath}/results/screenShots

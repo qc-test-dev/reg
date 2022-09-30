@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220923 12:50:29.714" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220930 15:30:19.462" rpa="false" schemaversion="3">
 <suite id="s1" name="regFcs" source="C:\Users\Jasso\Desktop\FCS\testCases\regFcs.robot">
 <test id="s1-t1" name="-Registro FCS Andres-" line="8">
 <kw name="-CONFIGURAR TESTCASE-" library="test_keywords" type="SETUP">
@@ -7,11 +7,11 @@
 <kw name="Set Screenshot Directory" library="Selenium2Library">
 <arg>${screenshots-folder}</arg>
 <doc>Sets the directory for captured screenshots.</doc>
-<status status="PASS" starttime="20220923 12:50:29.861" endtime="20220923 12:50:29.861"/>
+<status status="PASS" starttime="20220930 15:30:19.603" endtime="20220930 15:30:19.603"/>
 </kw>
-<status status="PASS" starttime="20220923 12:50:29.861" endtime="20220923 12:50:29.861"/>
+<status status="PASS" starttime="20220930 15:30:19.603" endtime="20220930 15:30:19.603"/>
 </kw>
-<status status="PASS" starttime="20220923 12:50:29.861" endtime="20220923 12:50:29.861"/>
+<status status="PASS" starttime="20220930 15:30:19.603" endtime="20220930 15:30:19.603"/>
 </kw>
 <kw name="-Abrir URL-" library="test_keywords">
 <arg>${url_fcs_main}</arg>
@@ -20,10 +20,10 @@
 <arg>${url_togo}</arg>
 <arg>${naveg}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220923 12:50:29.862" level="INFO">Opening browser 'Chrome' to base url 'https://www.fcs-monitoreo.com'.</msg>
-<status status="PASS" starttime="20220923 12:50:29.862" endtime="20220923 12:50:35.998"/>
+<msg timestamp="20220930 15:30:19.603" level="INFO">Opening browser 'Edge' to base url 'https://www.fcs-monitoreo.com'.</msg>
+<status status="PASS" starttime="20220930 15:30:19.603" endtime="20220930 15:30:21.774"/>
 </kw>
-<status status="PASS" starttime="20220923 12:50:29.862" endtime="20220923 12:50:35.998"/>
+<status status="PASS" starttime="20220930 15:30:19.603" endtime="20220930 15:30:21.774"/>
 </kw>
 <kw name="-VALIDAR ELEMENTOS-" library="test_keywords">
 <arg>${clave_ini}</arg>
@@ -35,7 +35,7 @@
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220923 12:50:35.999" endtime="20220923 12:50:36.273"/>
+<status status="PASS" starttime="20220930 15:30:21.775" endtime="20220930 15:30:22.043"/>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>Wait Until Element is Visible</arg>
@@ -44,25 +44,40 @@
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220923 12:50:36.273" endtime="20220923 12:50:36.298"/>
+<status status="PASS" starttime="20220930 15:30:22.043" endtime="20220930 15:30:22.057"/>
 </kw>
-<status status="PASS" starttime="20220923 12:50:36.273" endtime="20220923 12:50:36.298"/>
+<status status="PASS" starttime="20220930 15:30:22.043" endtime="20220930 15:30:22.057"/>
 </kw>
-<status status="PASS" starttime="20220923 12:50:35.999" endtime="20220923 12:50:36.298"/>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>capture page screenshot</arg>
+<arg>${screenshots-folder}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<arg>${screenshots-folder}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220930 15:30:22.293" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../results/screenShots/selenium-screenshot-89.png"&gt;&lt;img src="../results/screenShots/selenium-screenshot-89.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220930 15:30:22.293" level="INFO">C:\Users\Jasso\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py:926: UserWarning: name used for saved screenshot does not match file type. It should end with a `.png` extension
+  warnings.warn("name used for saved screenshot does not match file "</msg>
+<msg timestamp="20220930 15:30:22.294" level="FAIL">Failed to save screenshot 'C:\Users\Jasso\Desktop\FCS\results\screenShots'.</msg>
+<status status="FAIL" starttime="20220930 15:30:22.058" endtime="20220930 15:30:22.296"/>
+</kw>
+<status status="FAIL" starttime="20220930 15:30:22.057" endtime="20220930 15:30:22.297"/>
+</kw>
+<status status="FAIL" starttime="20220930 15:30:21.775" endtime="20220930 15:30:22.297"/>
 </iter>
-<status status="PASS" starttime="20220923 12:50:35.999" endtime="20220923 12:50:36.298"/>
+<status status="FAIL" starttime="20220930 15:30:21.775" endtime="20220930 15:30:22.298"/>
 </for>
-<status status="PASS" starttime="20220923 12:50:35.998" endtime="20220923 12:50:36.298"/>
+<status status="FAIL" starttime="20220930 15:30:21.775" endtime="20220930 15:30:22.298"/>
 </kw>
 <kw name="-CLICK ELEMENTO-" library="test_keywords">
 <arg>${clave_ini['boton_ingresar']}</arg>
 <kw name="Click Element" library="Selenium2Library">
 <arg>${elemento}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 12:50:36.300" level="INFO">Clicking element 'xpath=//div[@class="btn primario"]'.</msg>
-<status status="PASS" starttime="20220923 12:50:36.300" endtime="20220923 12:50:36.914"/>
+<msg timestamp="20220930 15:30:22.301" level="INFO">Clicking element 'xpath=//div[@class="btn primario"]'.</msg>
+<status status="PASS" starttime="20220930 15:30:22.300" endtime="20220930 15:30:22.623"/>
 </kw>
-<status status="PASS" starttime="20220923 12:50:36.299" endtime="20220923 12:50:36.914"/>
+<status status="PASS" starttime="20220930 15:30:22.299" endtime="20220930 15:30:22.623"/>
 </kw>
 <kw name="-VALIDAR ELEMENTOS-" library="test_keywords">
 <arg>${elementos_log}</arg>
@@ -74,7 +89,7 @@
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220923 12:50:36.916" endtime="20220923 12:50:37.190"/>
+<status status="PASS" starttime="20220930 15:30:22.624" endtime="20220930 15:30:22.897"/>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>Wait Until Element is Visible</arg>
@@ -83,18 +98,31 @@
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220923 12:50:37.190" endtime="20220923 12:50:37.208"/>
+<status status="PASS" starttime="20220930 15:30:22.898" endtime="20220930 15:30:22.926"/>
 </kw>
-<status status="PASS" starttime="20220923 12:50:37.190" endtime="20220923 12:50:37.208"/>
+<status status="PASS" starttime="20220930 15:30:22.898" endtime="20220930 15:30:22.926"/>
 </kw>
-<status status="PASS" starttime="20220923 12:50:36.915" endtime="20220923 12:50:37.208"/>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>capture page screenshot</arg>
+<arg>${screenshots-folder}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<arg>${screenshots-folder}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220930 15:30:23.639" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../results/screenShots/selenium-screenshot-90.png"&gt;&lt;img src="../results/screenShots/selenium-screenshot-90.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220930 15:30:23.640" level="FAIL">Failed to save screenshot 'C:\Users\Jasso\Desktop\FCS\results\screenShots'.</msg>
+<status status="FAIL" starttime="20220930 15:30:22.926" endtime="20220930 15:30:23.640"/>
+</kw>
+<status status="FAIL" starttime="20220930 15:30:22.926" endtime="20220930 15:30:23.640"/>
+</kw>
+<status status="FAIL" starttime="20220930 15:30:22.624" endtime="20220930 15:30:23.640"/>
 </iter>
 <iter>
 <var name="${element}">input_password</var>
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220923 12:50:37.208" endtime="20220923 12:50:37.483"/>
+<status status="PASS" starttime="20220930 15:30:23.641" endtime="20220930 15:30:23.921"/>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>Wait Until Element is Visible</arg>
@@ -103,18 +131,31 @@
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220923 12:50:37.484" endtime="20220923 12:50:37.508"/>
+<status status="PASS" starttime="20220930 15:30:23.921" endtime="20220930 15:30:23.940"/>
 </kw>
-<status status="PASS" starttime="20220923 12:50:37.484" endtime="20220923 12:50:37.508"/>
+<status status="PASS" starttime="20220930 15:30:23.921" endtime="20220930 15:30:23.940"/>
 </kw>
-<status status="PASS" starttime="20220923 12:50:37.208" endtime="20220923 12:50:37.508"/>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>capture page screenshot</arg>
+<arg>${screenshots-folder}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<arg>${screenshots-folder}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220930 15:30:24.618" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../results/screenShots/selenium-screenshot-91.png"&gt;&lt;img src="../results/screenShots/selenium-screenshot-91.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220930 15:30:24.619" level="FAIL">Failed to save screenshot 'C:\Users\Jasso\Desktop\FCS\results\screenShots'.</msg>
+<status status="FAIL" starttime="20220930 15:30:23.941" endtime="20220930 15:30:24.619"/>
+</kw>
+<status status="FAIL" starttime="20220930 15:30:23.940" endtime="20220930 15:30:24.619"/>
+</kw>
+<status status="FAIL" starttime="20220930 15:30:23.641" endtime="20220930 15:30:24.619"/>
 </iter>
 <iter>
 <var name="${element}">boton_ingresar</var>
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220923 12:50:37.508" endtime="20220923 12:50:37.792"/>
+<status status="PASS" starttime="20220930 15:30:24.620" endtime="20220930 15:30:24.898"/>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>Wait Until Element is Visible</arg>
@@ -123,15 +164,28 @@
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220923 12:50:37.792" endtime="20220923 12:50:37.816"/>
+<status status="PASS" starttime="20220930 15:30:24.899" endtime="20220930 15:30:24.929"/>
 </kw>
-<status status="PASS" starttime="20220923 12:50:37.792" endtime="20220923 12:50:37.816"/>
+<status status="PASS" starttime="20220930 15:30:24.898" endtime="20220930 15:30:24.929"/>
 </kw>
-<status status="PASS" starttime="20220923 12:50:37.508" endtime="20220923 12:50:37.816"/>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>capture page screenshot</arg>
+<arg>${screenshots-folder}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<arg>${screenshots-folder}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220930 15:30:25.629" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../results/screenShots/selenium-screenshot-92.png"&gt;&lt;img src="../results/screenShots/selenium-screenshot-92.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220930 15:30:25.630" level="FAIL">Failed to save screenshot 'C:\Users\Jasso\Desktop\FCS\results\screenShots'.</msg>
+<status status="FAIL" starttime="20220930 15:30:24.929" endtime="20220930 15:30:25.630"/>
+</kw>
+<status status="FAIL" starttime="20220930 15:30:24.929" endtime="20220930 15:30:25.631"/>
+</kw>
+<status status="FAIL" starttime="20220930 15:30:24.620" endtime="20220930 15:30:25.631"/>
 </iter>
-<status status="PASS" starttime="20220923 12:50:36.915" endtime="20220923 12:50:37.816"/>
+<status status="FAIL" starttime="20220930 15:30:22.623" endtime="20220930 15:30:25.631"/>
 </for>
-<status status="PASS" starttime="20220923 12:50:36.915" endtime="20220923 12:50:37.817"/>
+<status status="FAIL" starttime="20220930 15:30:22.623" endtime="20220930 15:30:25.632"/>
 </kw>
 <kw name="- Ingresar Texto -" library="test_keywords">
 <arg>${elementos_log['input_correo']}</arg>
@@ -139,17 +193,17 @@
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220923 12:50:40.820" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20220923 12:50:37.818" endtime="20220923 12:50:40.820"/>
+<msg timestamp="20220930 15:30:28.641" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220930 15:30:25.635" endtime="20220930 15:30:28.641"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>${ubicador}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220923 12:50:40.821" level="INFO">Typing text 'jasso.q15@outlook.com' into text field 'xpath=//input[@id="emailLogin"]'.</msg>
-<status status="PASS" starttime="20220923 12:50:40.820" endtime="20220923 12:50:40.884"/>
+<msg timestamp="20220930 15:30:28.643" level="INFO">Typing text 'jasso.q15@outlook.com' into text field 'xpath=//input[@id="emailLogin"]'.</msg>
+<status status="PASS" starttime="20220930 15:30:28.641" endtime="20220930 15:30:28.734"/>
 </kw>
-<status status="PASS" starttime="20220923 12:50:37.817" endtime="20220923 12:50:40.884"/>
+<status status="PASS" starttime="20220930 15:30:25.633" endtime="20220930 15:30:28.735"/>
 </kw>
 <kw name="- Ingresar Texto -" library="test_keywords">
 <arg>${elementos_log['input_password']}</arg>
@@ -157,27 +211,27 @@
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220923 12:50:43.896" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20220923 12:50:40.885" endtime="20220923 12:50:43.896"/>
+<msg timestamp="20220930 15:30:31.751" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220930 15:30:28.736" endtime="20220930 15:30:31.751"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>${ubicador}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220923 12:50:43.897" level="INFO">Typing text 'Claro123' into text field 'xpath=//input[@id="passwordLogin"]'.</msg>
-<status status="PASS" starttime="20220923 12:50:43.896" endtime="20220923 12:50:43.951"/>
+<msg timestamp="20220930 15:30:31.752" level="INFO">Typing text 'Claro123' into text field 'xpath=//input[@id="passwordLogin"]'.</msg>
+<status status="PASS" starttime="20220930 15:30:31.751" endtime="20220930 15:30:31.834"/>
 </kw>
-<status status="PASS" starttime="20220923 12:50:40.884" endtime="20220923 12:50:43.951"/>
+<status status="PASS" starttime="20220930 15:30:28.735" endtime="20220930 15:30:31.834"/>
 </kw>
 <kw name="-CLICK ELEMENTO-" library="test_keywords">
 <arg>${elementos_log['boton_ingresar']}</arg>
 <kw name="Click Element" library="Selenium2Library">
 <arg>${elemento}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 12:50:43.952" level="INFO">Clicking element 'xpath=//button[normalize-space()="Ingresar"]'.</msg>
-<status status="PASS" starttime="20220923 12:50:43.952" endtime="20220923 12:50:43.984"/>
+<msg timestamp="20220930 15:30:31.835" level="INFO">Clicking element 'xpath=//button[normalize-space()="Ingresar"]'.</msg>
+<status status="PASS" starttime="20220930 15:30:31.835" endtime="20220930 15:30:31.868"/>
 </kw>
-<status status="PASS" starttime="20220923 12:50:43.952" endtime="20220923 12:50:43.985"/>
+<status status="PASS" starttime="20220930 15:30:31.834" endtime="20220930 15:30:31.868"/>
 </kw>
 <kw name="-VALIDAR ELEMENTOS-" library="test_keywords">
 <arg>${Home}</arg>
@@ -189,7 +243,7 @@
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220923 12:50:43.986" endtime="20220923 12:50:45.975"/>
+<status status="PASS" starttime="20220930 15:30:31.869" endtime="20220930 15:30:32.864"/>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>Wait Until Element is Visible</arg>
@@ -198,25 +252,38 @@
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220923 12:50:45.975" endtime="20220923 12:50:45.996"/>
+<status status="PASS" starttime="20220930 15:30:32.864" endtime="20220930 15:30:32.887"/>
 </kw>
-<status status="PASS" starttime="20220923 12:50:45.975" endtime="20220923 12:50:45.996"/>
+<status status="PASS" starttime="20220930 15:30:32.864" endtime="20220930 15:30:32.888"/>
 </kw>
-<status status="PASS" starttime="20220923 12:50:43.985" endtime="20220923 12:50:45.996"/>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>capture page screenshot</arg>
+<arg>${screenshots-folder}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<arg>${screenshots-folder}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220930 15:30:33.128" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../results/screenShots/selenium-screenshot-93.png"&gt;&lt;img src="../results/screenShots/selenium-screenshot-93.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220930 15:30:33.128" level="FAIL">Failed to save screenshot 'C:\Users\Jasso\Desktop\FCS\results\screenShots'.</msg>
+<status status="FAIL" starttime="20220930 15:30:32.888" endtime="20220930 15:30:33.128"/>
+</kw>
+<status status="FAIL" starttime="20220930 15:30:32.888" endtime="20220930 15:30:33.129"/>
+</kw>
+<status status="FAIL" starttime="20220930 15:30:31.869" endtime="20220930 15:30:33.129"/>
 </iter>
-<status status="PASS" starttime="20220923 12:50:43.985" endtime="20220923 12:50:45.996"/>
+<status status="FAIL" starttime="20220930 15:30:31.869" endtime="20220930 15:30:33.129"/>
 </for>
-<status status="PASS" starttime="20220923 12:50:43.985" endtime="20220923 12:50:45.997"/>
+<status status="FAIL" starttime="20220930 15:30:31.868" endtime="20220930 15:30:33.129"/>
 </kw>
 <kw name="-CLICK ELEMENTO-" library="test_keywords">
 <arg>${Home['boton_RM']}</arg>
 <kw name="Click Element" library="Selenium2Library">
 <arg>${elemento}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 12:50:45.998" level="INFO">Clicking element 'xpath=//span[normalize-space()="Reporte manual"]'.</msg>
-<status status="PASS" starttime="20220923 12:50:45.998" endtime="20220923 12:50:47.381"/>
+<msg timestamp="20220930 15:30:33.130" level="INFO">Clicking element 'xpath=//span[normalize-space()="Reporte manual"]'.</msg>
+<status status="PASS" starttime="20220930 15:30:33.130" endtime="20220930 15:30:33.562"/>
 </kw>
-<status status="PASS" starttime="20220923 12:50:45.997" endtime="20220923 12:50:47.381"/>
+<status status="PASS" starttime="20220930 15:30:33.130" endtime="20220930 15:30:33.562"/>
 </kw>
 <kw name="-VALIDAR ELEMENTOS-" library="test_keywords">
 <arg>${Sntms}</arg>
@@ -228,7 +295,7 @@
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220923 12:50:47.383" endtime="20220923 12:50:47.660"/>
+<status status="PASS" starttime="20220930 15:30:33.563" endtime="20220930 15:30:33.843"/>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>Wait Until Element is Visible</arg>
@@ -237,18 +304,31 @@
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220923 12:50:47.660" endtime="20220923 12:50:47.678"/>
+<status status="PASS" starttime="20220930 15:30:33.843" endtime="20220930 15:30:33.869"/>
 </kw>
-<status status="PASS" starttime="20220923 12:50:47.660" endtime="20220923 12:50:47.678"/>
+<status status="PASS" starttime="20220930 15:30:33.843" endtime="20220930 15:30:33.869"/>
 </kw>
-<status status="PASS" starttime="20220923 12:50:47.382" endtime="20220923 12:50:47.678"/>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>capture page screenshot</arg>
+<arg>${screenshots-folder}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<arg>${screenshots-folder}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220930 15:30:34.179" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../results/screenShots/selenium-screenshot-94.png"&gt;&lt;img src="../results/screenShots/selenium-screenshot-94.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220930 15:30:34.180" level="FAIL">Failed to save screenshot 'C:\Users\Jasso\Desktop\FCS\results\screenShots'.</msg>
+<status status="FAIL" starttime="20220930 15:30:33.869" endtime="20220930 15:30:34.180"/>
+</kw>
+<status status="FAIL" starttime="20220930 15:30:33.869" endtime="20220930 15:30:34.180"/>
+</kw>
+<status status="FAIL" starttime="20220930 15:30:33.563" endtime="20220930 15:30:34.180"/>
 </iter>
 <iter>
 <var name="${element}">boton_Continue</var>
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220923 12:50:47.679" endtime="20220923 12:50:47.971"/>
+<status status="PASS" starttime="20220930 15:30:34.181" endtime="20220930 15:30:34.479"/>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>Wait Until Element is Visible</arg>
@@ -257,15 +337,28 @@
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220923 12:50:47.972" endtime="20220923 12:50:47.998"/>
+<status status="PASS" starttime="20220930 15:30:34.479" endtime="20220930 15:30:34.507"/>
 </kw>
-<status status="PASS" starttime="20220923 12:50:47.971" endtime="20220923 12:50:47.998"/>
+<status status="PASS" starttime="20220930 15:30:34.479" endtime="20220930 15:30:34.507"/>
 </kw>
-<status status="PASS" starttime="20220923 12:50:47.678" endtime="20220923 12:50:47.998"/>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>capture page screenshot</arg>
+<arg>${screenshots-folder}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<arg>${screenshots-folder}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220930 15:30:34.764" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../results/screenShots/selenium-screenshot-95.png"&gt;&lt;img src="../results/screenShots/selenium-screenshot-95.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220930 15:30:34.764" level="FAIL">Failed to save screenshot 'C:\Users\Jasso\Desktop\FCS\results\screenShots'.</msg>
+<status status="FAIL" starttime="20220930 15:30:34.508" endtime="20220930 15:30:34.765"/>
+</kw>
+<status status="FAIL" starttime="20220930 15:30:34.507" endtime="20220930 15:30:34.765"/>
+</kw>
+<status status="FAIL" starttime="20220930 15:30:34.181" endtime="20220930 15:30:34.766"/>
 </iter>
-<status status="PASS" starttime="20220923 12:50:47.382" endtime="20220923 12:50:47.998"/>
+<status status="FAIL" starttime="20220930 15:30:33.563" endtime="20220930 15:30:34.766"/>
 </for>
-<status status="PASS" starttime="20220923 12:50:47.382" endtime="20220923 12:50:47.998"/>
+<status status="FAIL" starttime="20220930 15:30:33.562" endtime="20220930 15:30:34.767"/>
 </kw>
 <kw name="- Ingresar Texto -" library="test_keywords">
 <arg>${Sntms['input_oxim']}</arg>
@@ -273,27 +366,27 @@
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220923 12:50:51.002" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20220923 12:50:48.001" endtime="20220923 12:50:51.002"/>
+<msg timestamp="20220930 15:30:37.777" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220930 15:30:34.769" endtime="20220930 15:30:37.777"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>${ubicador}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220923 12:50:51.003" level="INFO">Typing text '92' into text field 'xpath=//input[@id="idOximetry"]'.</msg>
-<status status="PASS" starttime="20220923 12:50:51.002" endtime="20220923 12:50:51.067"/>
+<msg timestamp="20220930 15:30:37.778" level="INFO">Typing text '92' into text field 'xpath=//input[@id="idOximetry"]'.</msg>
+<status status="PASS" starttime="20220930 15:30:37.777" endtime="20220930 15:30:37.857"/>
 </kw>
-<status status="PASS" starttime="20220923 12:50:48.000" endtime="20220923 12:50:51.067"/>
+<status status="PASS" starttime="20220930 15:30:34.768" endtime="20220930 15:30:37.857"/>
 </kw>
 <kw name="-CLICK ELEMENTO-" library="test_keywords">
 <arg>${Sntms['boton_Continue']}</arg>
 <kw name="Click Element" library="Selenium2Library">
 <arg>${elemento}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 12:50:51.069" level="INFO">Clicking element 'xpath=//button[@class="btn primario firstForm"]'.</msg>
-<status status="PASS" starttime="20220923 12:50:51.068" endtime="20220923 12:50:51.112"/>
+<msg timestamp="20220930 15:30:37.859" level="INFO">Clicking element 'xpath=//button[@class="btn primario firstForm"]'.</msg>
+<status status="PASS" starttime="20220930 15:30:37.858" endtime="20220930 15:30:37.898"/>
 </kw>
-<status status="PASS" starttime="20220923 12:50:51.068" endtime="20220923 12:50:51.113"/>
+<status status="PASS" starttime="20220930 15:30:37.858" endtime="20220930 15:30:37.898"/>
 </kw>
 <kw name="-VALIDAR ELEMENTOS-" library="test_keywords">
 <arg>${EndPage}</arg>
@@ -305,7 +398,7 @@
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220923 12:50:51.113" endtime="20220923 12:50:51.394"/>
+<status status="PASS" starttime="20220930 15:30:37.899" endtime="20220930 15:30:38.184"/>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>Wait Until Element is Visible</arg>
@@ -314,59 +407,76 @@
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220923 12:50:51.394" endtime="20220923 12:50:51.412"/>
+<status status="PASS" starttime="20220930 15:30:38.184" endtime="20220930 15:30:38.213"/>
 </kw>
-<status status="PASS" starttime="20220923 12:50:51.394" endtime="20220923 12:50:51.412"/>
+<status status="PASS" starttime="20220930 15:30:38.184" endtime="20220930 15:30:38.213"/>
 </kw>
-<status status="PASS" starttime="20220923 12:50:51.113" endtime="20220923 12:50:51.412"/>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>capture page screenshot</arg>
+<arg>${screenshots-folder}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<arg>${screenshots-folder}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220930 15:30:38.497" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../results/screenShots/selenium-screenshot-96.png"&gt;&lt;img src="../results/screenShots/selenium-screenshot-96.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220930 15:30:38.497" level="FAIL">Failed to save screenshot 'C:\Users\Jasso\Desktop\FCS\results\screenShots'.</msg>
+<status status="FAIL" starttime="20220930 15:30:38.213" endtime="20220930 15:30:38.497"/>
+</kw>
+<status status="FAIL" starttime="20220930 15:30:38.213" endtime="20220930 15:30:38.498"/>
+</kw>
+<status status="FAIL" starttime="20220930 15:30:37.899" endtime="20220930 15:30:38.498"/>
 </iter>
-<status status="PASS" starttime="20220923 12:50:51.113" endtime="20220923 12:50:51.412"/>
+<status status="FAIL" starttime="20220930 15:30:37.899" endtime="20220930 15:30:38.498"/>
 </for>
-<status status="PASS" starttime="20220923 12:50:51.113" endtime="20220923 12:50:51.412"/>
+<status status="FAIL" starttime="20220930 15:30:37.898" endtime="20220930 15:30:38.499"/>
 </kw>
 <kw name="Select From List By Index" library="Selenium2Library">
 <arg>whyIsolation</arg>
 <arg>3</arg>
 <doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
-<msg timestamp="20220923 12:50:51.413" level="INFO">Selecting options from selection list 'whyIsolation' by index 3.</msg>
-<status status="PASS" starttime="20220923 12:50:51.413" endtime="20220923 12:50:51.497"/>
+<msg timestamp="20220930 15:30:38.500" level="INFO">Selecting options from selection list 'whyIsolation' by index 3.</msg>
+<status status="PASS" starttime="20220930 15:30:38.500" endtime="20220930 15:30:38.580"/>
 </kw>
 <kw name="-CLICK ELEMENTO-" library="test_keywords">
 <arg>${EndPage['boton_Continue']}</arg>
 <kw name="Click Element" library="Selenium2Library">
 <arg>${elemento}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 12:50:51.499" level="INFO">Clicking element 'xpath=//button[@class="btn primario lastForm"]'.</msg>
-<status status="PASS" starttime="20220923 12:50:51.499" endtime="20220923 12:50:51.528"/>
+<msg timestamp="20220930 15:30:38.581" level="INFO">Clicking element 'xpath=//button[@class="btn primario lastForm"]'.</msg>
+<status status="PASS" starttime="20220930 15:30:38.581" endtime="20220930 15:30:38.615"/>
 </kw>
-<status status="PASS" starttime="20220923 12:50:51.498" endtime="20220923 12:50:51.528"/>
+<status status="PASS" starttime="20220930 15:30:38.580" endtime="20220930 15:30:38.615"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>3s</arg>
+<arg>4s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220923 12:50:54.534" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20220923 12:50:51.528" endtime="20220923 12:50:54.534"/>
-</kw>
-<kw name="-CERRAR TODOS LOS NAVEGADORES-" library="test_keywords">
-<kw name="Close All Browsers" library="Selenium2Library">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20220923 12:50:54.535" endtime="20220923 12:50:56.701"/>
-</kw>
-<status status="PASS" starttime="20220923 12:50:54.535" endtime="20220923 12:50:56.702"/>
+<msg timestamp="20220930 15:30:42.623" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20220930 15:30:38.616" endtime="20220930 15:30:42.623"/>
 </kw>
 <kw name="-TERMINAR CONFIGURACIÓN TESTCASE-" library="test_keywords" type="TEARDOWN">
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220923 12:50:56.705" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" starttime="20220923 12:50:56.705" endtime="20220923 12:50:56.705"/>
-</kw>
 <kw name="Close All Browsers" library="Selenium2Library">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20220923 12:50:56.705" endtime="20220923 12:50:56.705"/>
+<status status="PASS" starttime="20220930 15:30:42.626" endtime="20220930 15:30:44.826"/>
 </kw>
-<status status="PASS" starttime="20220923 12:50:56.703" endtime="20220923 12:50:56.705"/>
+<status status="PASS" starttime="20220930 15:30:42.625" endtime="20220930 15:30:44.826"/>
 </kw>
-<status status="PASS" starttime="20220923 12:50:29.859" endtime="20220923 12:50:56.705"/>
+<status status="FAIL" starttime="20220930 15:30:19.603" endtime="20220930 15:30:44.827">Several failures occurred:
+
+1) Failed to save screenshot 'C:\Users\Jasso\Desktop\FCS\results\screenShots'.
+
+2) Failed to save screenshot 'C:\Users\Jasso\Desktop\FCS\results\screenShots'.
+
+3) Failed to save screenshot 'C:\Users\Jasso\Desktop\FCS\results\screenShots'.
+
+4) Failed to save screenshot 'C:\Users\Jasso\Desktop\FCS\results\screenShots'.
+
+5) Failed to save screenshot 'C:\Users\Jasso\Desktop\FCS\results\screenShots'.
+
+6) Failed to save screenshot 'C:\Users\Jasso\Desktop\FCS\results\screenShots'.
+
+7) Failed to save screenshot 'C:\Users\Jasso\Desktop\FCS\results\screenShots'.
+
+8) Failed to save screenshot 'C:\Users\Jasso\Desktop\FCS\results\screenShots'.</status>
 </test>
 <test id="s1-t2" name="-Registro FCS Alberto-" line="33">
 <kw name="-CONFIGURAR TESTCASE-" library="test_keywords" type="SETUP">
@@ -374,11 +484,11 @@
 <kw name="Set Screenshot Directory" library="Selenium2Library">
 <arg>${screenshots-folder}</arg>
 <doc>Sets the directory for captured screenshots.</doc>
-<status status="PASS" starttime="20220923 12:50:56.710" endtime="20220923 12:50:56.710"/>
+<status status="PASS" starttime="20220930 15:30:44.828" endtime="20220930 15:30:44.828"/>
 </kw>
-<status status="PASS" starttime="20220923 12:50:56.709" endtime="20220923 12:50:56.710"/>
+<status status="PASS" starttime="20220930 15:30:44.828" endtime="20220930 15:30:44.828"/>
 </kw>
-<status status="PASS" starttime="20220923 12:50:56.709" endtime="20220923 12:50:56.711"/>
+<status status="PASS" starttime="20220930 15:30:44.828" endtime="20220930 15:30:44.828"/>
 </kw>
 <kw name="-Abrir URL-" library="test_keywords">
 <arg>${url_fcs_main}</arg>
@@ -387,10 +497,10 @@
 <arg>${url_togo}</arg>
 <arg>${naveg}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220923 12:50:56.712" level="INFO">Opening browser 'Chrome' to base url 'https://www.fcs-monitoreo.com'.</msg>
-<status status="PASS" starttime="20220923 12:50:56.712" endtime="20220923 12:50:58.644"/>
+<msg timestamp="20220930 15:30:44.828" level="INFO">Opening browser 'Edge' to base url 'https://www.fcs-monitoreo.com'.</msg>
+<status status="PASS" starttime="20220930 15:30:44.828" endtime="20220930 15:30:46.921"/>
 </kw>
-<status status="PASS" starttime="20220923 12:50:56.711" endtime="20220923 12:50:58.644"/>
+<status status="PASS" starttime="20220930 15:30:44.828" endtime="20220930 15:30:46.921"/>
 </kw>
 <kw name="-VALIDAR ELEMENTOS-" library="test_keywords">
 <arg>${clave_ini}</arg>
@@ -402,7 +512,7 @@
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220923 12:50:58.646" endtime="20220923 12:50:58.922"/>
+<status status="PASS" starttime="20220930 15:30:46.922" endtime="20220930 15:30:47.192"/>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>Wait Until Element is Visible</arg>
@@ -411,25 +521,38 @@
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220923 12:50:58.922" endtime="20220923 12:50:58.935"/>
+<status status="PASS" starttime="20220930 15:30:47.192" endtime="20220930 15:30:47.210"/>
 </kw>
-<status status="PASS" starttime="20220923 12:50:58.922" endtime="20220923 12:50:58.935"/>
+<status status="PASS" starttime="20220930 15:30:47.192" endtime="20220930 15:30:47.210"/>
 </kw>
-<status status="PASS" starttime="20220923 12:50:58.646" endtime="20220923 12:50:58.935"/>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>capture page screenshot</arg>
+<arg>${screenshots-folder}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<arg>${screenshots-folder}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220930 15:30:47.454" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../results/screenShots/selenium-screenshot-97.png"&gt;&lt;img src="../results/screenShots/selenium-screenshot-97.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220930 15:30:47.454" level="FAIL">Failed to save screenshot 'C:\Users\Jasso\Desktop\FCS\results\screenShots'.</msg>
+<status status="FAIL" starttime="20220930 15:30:47.210" endtime="20220930 15:30:47.454"/>
+</kw>
+<status status="FAIL" starttime="20220930 15:30:47.210" endtime="20220930 15:30:47.454"/>
+</kw>
+<status status="FAIL" starttime="20220930 15:30:46.922" endtime="20220930 15:30:47.454"/>
 </iter>
-<status status="PASS" starttime="20220923 12:50:58.645" endtime="20220923 12:50:58.935"/>
+<status status="FAIL" starttime="20220930 15:30:46.922" endtime="20220930 15:30:47.454"/>
 </for>
-<status status="PASS" starttime="20220923 12:50:58.645" endtime="20220923 12:50:58.935"/>
+<status status="FAIL" starttime="20220930 15:30:46.922" endtime="20220930 15:30:47.455"/>
 </kw>
 <kw name="-CLICK ELEMENTO-" library="test_keywords">
 <arg>${clave_ini['boton_ingresar']}</arg>
 <kw name="Click Element" library="Selenium2Library">
 <arg>${elemento}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 12:50:58.937" level="INFO">Clicking element 'xpath=//div[@class="btn primario"]'.</msg>
-<status status="PASS" starttime="20220923 12:50:58.937" endtime="20220923 12:50:59.223"/>
+<msg timestamp="20220930 15:30:47.456" level="INFO">Clicking element 'xpath=//div[@class="btn primario"]'.</msg>
+<status status="PASS" starttime="20220930 15:30:47.456" endtime="20220930 15:30:47.811"/>
 </kw>
-<status status="PASS" starttime="20220923 12:50:58.937" endtime="20220923 12:50:59.223"/>
+<status status="PASS" starttime="20220930 15:30:47.455" endtime="20220930 15:30:47.812"/>
 </kw>
 <kw name="-VALIDAR ELEMENTOS-" library="test_keywords">
 <arg>${elementos_log}</arg>
@@ -441,7 +564,7 @@
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220923 12:50:59.224" endtime="20220923 12:50:59.512"/>
+<status status="PASS" starttime="20220930 15:30:47.813" endtime="20220930 15:30:48.112"/>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>Wait Until Element is Visible</arg>
@@ -450,18 +573,31 @@
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220923 12:50:59.512" endtime="20220923 12:50:59.544"/>
+<status status="PASS" starttime="20220930 15:30:48.113" endtime="20220930 15:30:48.129"/>
 </kw>
-<status status="PASS" starttime="20220923 12:50:59.512" endtime="20220923 12:50:59.544"/>
+<status status="PASS" starttime="20220930 15:30:48.112" endtime="20220930 15:30:48.129"/>
 </kw>
-<status status="PASS" starttime="20220923 12:50:59.224" endtime="20220923 12:50:59.544"/>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>capture page screenshot</arg>
+<arg>${screenshots-folder}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<arg>${screenshots-folder}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220930 15:30:48.768" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../results/screenShots/selenium-screenshot-98.png"&gt;&lt;img src="../results/screenShots/selenium-screenshot-98.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220930 15:30:48.768" level="FAIL">Failed to save screenshot 'C:\Users\Jasso\Desktop\FCS\results\screenShots'.</msg>
+<status status="FAIL" starttime="20220930 15:30:48.129" endtime="20220930 15:30:48.768"/>
+</kw>
+<status status="FAIL" starttime="20220930 15:30:48.129" endtime="20220930 15:30:48.768"/>
+</kw>
+<status status="FAIL" starttime="20220930 15:30:47.813" endtime="20220930 15:30:48.768"/>
 </iter>
 <iter>
 <var name="${element}">input_password</var>
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220923 12:50:59.545" endtime="20220923 12:50:59.833"/>
+<status status="PASS" starttime="20220930 15:30:48.769" endtime="20220930 15:30:49.044"/>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>Wait Until Element is Visible</arg>
@@ -470,18 +606,31 @@
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220923 12:50:59.834" endtime="20220923 12:50:59.850"/>
+<status status="PASS" starttime="20220930 15:30:49.046" endtime="20220930 15:30:49.071"/>
 </kw>
-<status status="PASS" starttime="20220923 12:50:59.833" endtime="20220923 12:50:59.850"/>
+<status status="PASS" starttime="20220930 15:30:49.046" endtime="20220930 15:30:49.071"/>
 </kw>
-<status status="PASS" starttime="20220923 12:50:59.544" endtime="20220923 12:50:59.850"/>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>capture page screenshot</arg>
+<arg>${screenshots-folder}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<arg>${screenshots-folder}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220930 15:30:49.752" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../results/screenShots/selenium-screenshot-99.png"&gt;&lt;img src="../results/screenShots/selenium-screenshot-99.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220930 15:30:49.752" level="FAIL">Failed to save screenshot 'C:\Users\Jasso\Desktop\FCS\results\screenShots'.</msg>
+<status status="FAIL" starttime="20220930 15:30:49.071" endtime="20220930 15:30:49.752"/>
+</kw>
+<status status="FAIL" starttime="20220930 15:30:49.071" endtime="20220930 15:30:49.752"/>
+</kw>
+<status status="FAIL" starttime="20220930 15:30:48.769" endtime="20220930 15:30:49.752"/>
 </iter>
 <iter>
 <var name="${element}">boton_ingresar</var>
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220923 12:50:59.850" endtime="20220923 12:51:00.126"/>
+<status status="PASS" starttime="20220930 15:30:49.753" endtime="20220930 15:30:50.024"/>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>Wait Until Element is Visible</arg>
@@ -490,15 +639,28 @@
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220923 12:51:00.127" endtime="20220923 12:51:00.145"/>
+<status status="PASS" starttime="20220930 15:30:50.025" endtime="20220930 15:30:50.046"/>
 </kw>
-<status status="PASS" starttime="20220923 12:51:00.127" endtime="20220923 12:51:00.145"/>
+<status status="PASS" starttime="20220930 15:30:50.025" endtime="20220930 15:30:50.046"/>
 </kw>
-<status status="PASS" starttime="20220923 12:50:59.850" endtime="20220923 12:51:00.145"/>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>capture page screenshot</arg>
+<arg>${screenshots-folder}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<arg>${screenshots-folder}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220930 15:30:50.681" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../results/screenShots/selenium-screenshot-100.png"&gt;&lt;img src="../results/screenShots/selenium-screenshot-100.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220930 15:30:50.682" level="FAIL">Failed to save screenshot 'C:\Users\Jasso\Desktop\FCS\results\screenShots'.</msg>
+<status status="FAIL" starttime="20220930 15:30:50.047" endtime="20220930 15:30:50.682"/>
+</kw>
+<status status="FAIL" starttime="20220930 15:30:50.047" endtime="20220930 15:30:50.682"/>
+</kw>
+<status status="FAIL" starttime="20220930 15:30:49.753" endtime="20220930 15:30:50.682"/>
 </iter>
-<status status="PASS" starttime="20220923 12:50:59.224" endtime="20220923 12:51:00.145"/>
+<status status="FAIL" starttime="20220930 15:30:47.812" endtime="20220930 15:30:50.682"/>
 </for>
-<status status="PASS" starttime="20220923 12:50:59.224" endtime="20220923 12:51:00.145"/>
+<status status="FAIL" starttime="20220930 15:30:47.812" endtime="20220930 15:30:50.682"/>
 </kw>
 <kw name="- Ingresar Texto -" library="test_keywords">
 <arg>${elementos_log['input_correo']}</arg>
@@ -506,17 +668,17 @@
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220923 12:51:03.150" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20220923 12:51:00.146" endtime="20220923 12:51:03.150"/>
+<msg timestamp="20220930 15:30:53.690" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220930 15:30:50.684" endtime="20220930 15:30:53.690"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>${ubicador}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220923 12:51:03.150" level="INFO">Typing text 's_tamezaa@globalhitss.com' into text field 'xpath=//input[@id="emailLogin"]'.</msg>
-<status status="PASS" starttime="20220923 12:51:03.150" endtime="20220923 12:51:03.203"/>
+<msg timestamp="20220930 15:30:53.691" level="INFO">Typing text 's_tamezaa@globalhitss.com' into text field 'xpath=//input[@id="emailLogin"]'.</msg>
+<status status="PASS" starttime="20220930 15:30:53.690" endtime="20220930 15:30:53.757"/>
 </kw>
-<status status="PASS" starttime="20220923 12:51:00.145" endtime="20220923 12:51:03.203"/>
+<status status="PASS" starttime="20220930 15:30:50.684" endtime="20220930 15:30:53.757"/>
 </kw>
 <kw name="- Ingresar Texto -" library="test_keywords">
 <arg>${elementos_log['input_password']}</arg>
@@ -524,27 +686,27 @@
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220923 12:51:06.218" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20220923 12:51:03.204" endtime="20220923 12:51:06.218"/>
+<msg timestamp="20220930 15:30:56.764" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220930 15:30:53.758" endtime="20220930 15:30:56.765"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>${ubicador}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220923 12:51:06.218" level="INFO">Typing text '123456' into text field 'xpath=//input[@id="passwordLogin"]'.</msg>
-<status status="PASS" starttime="20220923 12:51:06.218" endtime="20220923 12:51:06.277"/>
+<msg timestamp="20220930 15:30:56.765" level="INFO">Typing text '123456' into text field 'xpath=//input[@id="passwordLogin"]'.</msg>
+<status status="PASS" starttime="20220930 15:30:56.765" endtime="20220930 15:30:56.828"/>
 </kw>
-<status status="PASS" starttime="20220923 12:51:03.204" endtime="20220923 12:51:06.277"/>
+<status status="PASS" starttime="20220930 15:30:53.757" endtime="20220930 15:30:56.828"/>
 </kw>
 <kw name="-CLICK ELEMENTO-" library="test_keywords">
 <arg>${elementos_log['boton_ingresar']}</arg>
 <kw name="Click Element" library="Selenium2Library">
 <arg>${elemento}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 12:51:06.279" level="INFO">Clicking element 'xpath=//button[normalize-space()="Ingresar"]'.</msg>
-<status status="PASS" starttime="20220923 12:51:06.278" endtime="20220923 12:51:06.311"/>
+<msg timestamp="20220930 15:30:56.829" level="INFO">Clicking element 'xpath=//button[normalize-space()="Ingresar"]'.</msg>
+<status status="PASS" starttime="20220930 15:30:56.829" endtime="20220930 15:30:56.859"/>
 </kw>
-<status status="PASS" starttime="20220923 12:51:06.278" endtime="20220923 12:51:06.311"/>
+<status status="PASS" starttime="20220930 15:30:56.829" endtime="20220930 15:30:56.860"/>
 </kw>
 <kw name="-VALIDAR ELEMENTOS-" library="test_keywords">
 <arg>${Home}</arg>
@@ -556,7 +718,7 @@
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220923 12:51:06.312" endtime="20220923 12:51:08.245"/>
+<status status="PASS" starttime="20220930 15:30:56.861" endtime="20220930 15:30:57.732"/>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>Wait Until Element is Visible</arg>
@@ -565,25 +727,38 @@
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220923 12:51:08.245" endtime="20220923 12:51:08.260"/>
+<status status="PASS" starttime="20220930 15:30:57.733" endtime="20220930 15:30:57.751"/>
 </kw>
-<status status="PASS" starttime="20220923 12:51:08.245" endtime="20220923 12:51:08.260"/>
+<status status="PASS" starttime="20220930 15:30:57.732" endtime="20220930 15:30:57.751"/>
 </kw>
-<status status="PASS" starttime="20220923 12:51:06.312" endtime="20220923 12:51:08.260"/>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>capture page screenshot</arg>
+<arg>${screenshots-folder}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<arg>${screenshots-folder}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220930 15:30:58.010" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../results/screenShots/selenium-screenshot-101.png"&gt;&lt;img src="../results/screenShots/selenium-screenshot-101.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220930 15:30:58.011" level="FAIL">Failed to save screenshot 'C:\Users\Jasso\Desktop\FCS\results\screenShots'.</msg>
+<status status="FAIL" starttime="20220930 15:30:57.751" endtime="20220930 15:30:58.011"/>
+</kw>
+<status status="FAIL" starttime="20220930 15:30:57.751" endtime="20220930 15:30:58.011"/>
+</kw>
+<status status="FAIL" starttime="20220930 15:30:56.861" endtime="20220930 15:30:58.011"/>
 </iter>
-<status status="PASS" starttime="20220923 12:51:06.312" endtime="20220923 12:51:08.260"/>
+<status status="FAIL" starttime="20220930 15:30:56.860" endtime="20220930 15:30:58.011"/>
 </for>
-<status status="PASS" starttime="20220923 12:51:06.312" endtime="20220923 12:51:08.260"/>
+<status status="FAIL" starttime="20220930 15:30:56.860" endtime="20220930 15:30:58.011"/>
 </kw>
 <kw name="-CLICK ELEMENTO-" library="test_keywords">
 <arg>${Home['boton_RM']}</arg>
 <kw name="Click Element" library="Selenium2Library">
 <arg>${elemento}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 12:51:08.261" level="INFO">Clicking element 'xpath=//span[normalize-space()="Reporte manual"]'.</msg>
-<status status="PASS" starttime="20220923 12:51:08.261" endtime="20220923 12:51:08.571"/>
+<msg timestamp="20220930 15:30:58.013" level="INFO">Clicking element 'xpath=//span[normalize-space()="Reporte manual"]'.</msg>
+<status status="PASS" starttime="20220930 15:30:58.013" endtime="20220930 15:30:58.426"/>
 </kw>
-<status status="PASS" starttime="20220923 12:51:08.260" endtime="20220923 12:51:08.572"/>
+<status status="PASS" starttime="20220930 15:30:58.012" endtime="20220930 15:30:58.426"/>
 </kw>
 <kw name="-VALIDAR ELEMENTOS-" library="test_keywords">
 <arg>${Sntms}</arg>
@@ -595,7 +770,7 @@
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220923 12:51:08.575" endtime="20220923 12:51:08.844"/>
+<status status="PASS" starttime="20220930 15:30:58.427" endtime="20220930 15:30:58.713"/>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>Wait Until Element is Visible</arg>
@@ -604,18 +779,31 @@
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220923 12:51:08.844" endtime="20220923 12:51:08.859"/>
+<status status="PASS" starttime="20220930 15:30:58.714" endtime="20220930 15:30:58.737"/>
 </kw>
-<status status="PASS" starttime="20220923 12:51:08.844" endtime="20220923 12:51:08.859"/>
+<status status="PASS" starttime="20220930 15:30:58.713" endtime="20220930 15:30:58.737"/>
 </kw>
-<status status="PASS" starttime="20220923 12:51:08.574" endtime="20220923 12:51:08.859"/>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>capture page screenshot</arg>
+<arg>${screenshots-folder}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<arg>${screenshots-folder}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220930 15:30:59.057" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../results/screenShots/selenium-screenshot-102.png"&gt;&lt;img src="../results/screenShots/selenium-screenshot-102.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220930 15:30:59.058" level="FAIL">Failed to save screenshot 'C:\Users\Jasso\Desktop\FCS\results\screenShots'.</msg>
+<status status="FAIL" starttime="20220930 15:30:58.737" endtime="20220930 15:30:59.058"/>
+</kw>
+<status status="FAIL" starttime="20220930 15:30:58.737" endtime="20220930 15:30:59.058"/>
+</kw>
+<status status="FAIL" starttime="20220930 15:30:58.427" endtime="20220930 15:30:59.058"/>
 </iter>
 <iter>
 <var name="${element}">boton_Continue</var>
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220923 12:51:08.860" endtime="20220923 12:51:09.154"/>
+<status status="PASS" starttime="20220930 15:30:59.058" endtime="20220930 15:30:59.349"/>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>Wait Until Element is Visible</arg>
@@ -624,15 +812,28 @@
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220923 12:51:09.154" endtime="20220923 12:51:09.173"/>
+<status status="PASS" starttime="20220930 15:30:59.350" endtime="20220930 15:30:59.374"/>
 </kw>
-<status status="PASS" starttime="20220923 12:51:09.154" endtime="20220923 12:51:09.173"/>
+<status status="PASS" starttime="20220930 15:30:59.349" endtime="20220930 15:30:59.374"/>
 </kw>
-<status status="PASS" starttime="20220923 12:51:08.859" endtime="20220923 12:51:09.173"/>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>capture page screenshot</arg>
+<arg>${screenshots-folder}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<arg>${screenshots-folder}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220930 15:30:59.627" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../results/screenShots/selenium-screenshot-103.png"&gt;&lt;img src="../results/screenShots/selenium-screenshot-103.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220930 15:30:59.627" level="FAIL">Failed to save screenshot 'C:\Users\Jasso\Desktop\FCS\results\screenShots'.</msg>
+<status status="FAIL" starttime="20220930 15:30:59.374" endtime="20220930 15:30:59.627"/>
+</kw>
+<status status="FAIL" starttime="20220930 15:30:59.374" endtime="20220930 15:30:59.628"/>
+</kw>
+<status status="FAIL" starttime="20220930 15:30:59.058" endtime="20220930 15:30:59.628"/>
 </iter>
-<status status="PASS" starttime="20220923 12:51:08.573" endtime="20220923 12:51:09.173"/>
+<status status="FAIL" starttime="20220930 15:30:58.427" endtime="20220930 15:30:59.628"/>
 </for>
-<status status="PASS" starttime="20220923 12:51:08.572" endtime="20220923 12:51:09.173"/>
+<status status="FAIL" starttime="20220930 15:30:58.426" endtime="20220930 15:30:59.628"/>
 </kw>
 <kw name="- Ingresar Texto -" library="test_keywords">
 <arg>${Sntms['input_oxim']}</arg>
@@ -640,27 +841,27 @@
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220923 12:51:12.183" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20220923 12:51:09.174" endtime="20220923 12:51:12.183"/>
+<msg timestamp="20220930 15:31:02.639" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220930 15:30:59.629" endtime="20220930 15:31:02.639"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>${ubicador}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220923 12:51:12.184" level="INFO">Typing text '92' into text field 'xpath=//input[@id="idOximetry"]'.</msg>
-<status status="PASS" starttime="20220923 12:51:12.183" endtime="20220923 12:51:12.240"/>
+<msg timestamp="20220930 15:31:02.640" level="INFO">Typing text '92' into text field 'xpath=//input[@id="idOximetry"]'.</msg>
+<status status="PASS" starttime="20220930 15:31:02.640" endtime="20220930 15:31:02.701"/>
 </kw>
-<status status="PASS" starttime="20220923 12:51:09.174" endtime="20220923 12:51:12.241"/>
+<status status="PASS" starttime="20220930 15:30:59.629" endtime="20220930 15:31:02.701"/>
 </kw>
 <kw name="-CLICK ELEMENTO-" library="test_keywords">
 <arg>${Sntms['boton_Continue']}</arg>
 <kw name="Click Element" library="Selenium2Library">
 <arg>${elemento}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 12:51:12.243" level="INFO">Clicking element 'xpath=//button[@class="btn primario firstForm"]'.</msg>
-<status status="PASS" starttime="20220923 12:51:12.242" endtime="20220923 12:51:12.289"/>
+<msg timestamp="20220930 15:31:02.703" level="INFO">Clicking element 'xpath=//button[@class="btn primario firstForm"]'.</msg>
+<status status="PASS" starttime="20220930 15:31:02.702" endtime="20220930 15:31:02.741"/>
 </kw>
-<status status="PASS" starttime="20220923 12:51:12.241" endtime="20220923 12:51:12.289"/>
+<status status="PASS" starttime="20220930 15:31:02.702" endtime="20220930 15:31:02.741"/>
 </kw>
 <kw name="-VALIDAR ELEMENTOS-" library="test_keywords">
 <arg>${EndPage}</arg>
@@ -672,7 +873,7 @@
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220923 12:51:12.289" endtime="20220923 12:51:12.570"/>
+<status status="PASS" starttime="20220930 15:31:02.742" endtime="20220930 15:31:03.028"/>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>Wait Until Element is Visible</arg>
@@ -681,83 +882,97 @@
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220923 12:51:12.570" endtime="20220923 12:51:12.583"/>
+<status status="PASS" starttime="20220930 15:31:03.030" endtime="20220930 15:31:03.049"/>
 </kw>
-<status status="PASS" starttime="20220923 12:51:12.570" endtime="20220923 12:51:12.583"/>
+<status status="PASS" starttime="20220930 15:31:03.030" endtime="20220930 15:31:03.049"/>
 </kw>
-<status status="PASS" starttime="20220923 12:51:12.289" endtime="20220923 12:51:12.583"/>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>capture page screenshot</arg>
+<arg>${screenshots-folder}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<arg>${screenshots-folder}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220930 15:31:03.332" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../results/screenShots/selenium-screenshot-104.png"&gt;&lt;img src="../results/screenShots/selenium-screenshot-104.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220930 15:31:03.332" level="FAIL">Failed to save screenshot 'C:\Users\Jasso\Desktop\FCS\results\screenShots'.</msg>
+<status status="FAIL" starttime="20220930 15:31:03.049" endtime="20220930 15:31:03.333"/>
+</kw>
+<status status="FAIL" starttime="20220930 15:31:03.049" endtime="20220930 15:31:03.333"/>
+</kw>
+<status status="FAIL" starttime="20220930 15:31:02.742" endtime="20220930 15:31:03.333"/>
 </iter>
-<status status="PASS" starttime="20220923 12:51:12.289" endtime="20220923 12:51:12.583"/>
+<status status="FAIL" starttime="20220930 15:31:02.742" endtime="20220930 15:31:03.333"/>
 </for>
-<status status="PASS" starttime="20220923 12:51:12.289" endtime="20220923 12:51:12.583"/>
+<status status="FAIL" starttime="20220930 15:31:02.742" endtime="20220930 15:31:03.333"/>
 </kw>
 <kw name="Select From List By Index" library="Selenium2Library">
 <arg>whyIsolation</arg>
 <arg>3</arg>
 <doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
-<msg timestamp="20220923 12:51:12.584" level="INFO">Selecting options from selection list 'whyIsolation' by index 3.</msg>
-<status status="PASS" starttime="20220923 12:51:12.584" endtime="20220923 12:51:12.655"/>
+<msg timestamp="20220930 15:31:03.334" level="INFO">Selecting options from selection list 'whyIsolation' by index 3.</msg>
+<status status="PASS" starttime="20220930 15:31:03.334" endtime="20220930 15:31:03.405"/>
 </kw>
 <kw name="-CLICK ELEMENTO-" library="test_keywords">
 <arg>${EndPage['boton_Continue']}</arg>
 <kw name="Click Element" library="Selenium2Library">
 <arg>${elemento}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220923 12:51:12.657" level="INFO">Clicking element 'xpath=//button[@class="btn primario lastForm"]'.</msg>
-<status status="PASS" starttime="20220923 12:51:12.657" endtime="20220923 12:51:12.683"/>
+<msg timestamp="20220930 15:31:03.406" level="INFO">Clicking element 'xpath=//button[@class="btn primario lastForm"]'.</msg>
+<status status="PASS" starttime="20220930 15:31:03.406" endtime="20220930 15:31:03.440"/>
 </kw>
-<status status="PASS" starttime="20220923 12:51:12.656" endtime="20220923 12:51:12.683"/>
+<status status="PASS" starttime="20220930 15:31:03.405" endtime="20220930 15:31:03.440"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220923 12:51:15.684" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20220923 12:51:12.683" endtime="20220923 12:51:15.684"/>
+<msg timestamp="20220930 15:31:06.444" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220930 15:31:03.440" endtime="20220930 15:31:06.444"/>
 </kw>
 <kw name="-CERRAR TODOS LOS NAVEGADORES-" library="test_keywords">
 <kw name="Close All Browsers" library="Selenium2Library">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20220923 12:51:15.685" endtime="20220923 12:51:17.879"/>
+<status status="PASS" starttime="20220930 15:31:06.446" endtime="20220930 15:31:08.619"/>
 </kw>
-<status status="PASS" starttime="20220923 12:51:15.685" endtime="20220923 12:51:17.879"/>
+<status status="PASS" starttime="20220930 15:31:06.446" endtime="20220930 15:31:08.619"/>
 </kw>
 <kw name="-TERMINAR CONFIGURACIÓN TESTCASE-" library="test_keywords" type="TEARDOWN">
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220923 12:51:17.881" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" starttime="20220923 12:51:17.880" endtime="20220923 12:51:17.881"/>
-</kw>
 <kw name="Close All Browsers" library="Selenium2Library">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20220923 12:51:17.881" endtime="20220923 12:51:17.881"/>
+<status status="PASS" starttime="20220930 15:31:08.619" endtime="20220930 15:31:08.619"/>
 </kw>
-<status status="PASS" starttime="20220923 12:51:17.880" endtime="20220923 12:51:17.881"/>
+<status status="PASS" starttime="20220930 15:31:08.619" endtime="20220930 15:31:08.619"/>
 </kw>
-<status status="PASS" starttime="20220923 12:50:56.708" endtime="20220923 12:51:17.881"/>
+<status status="FAIL" starttime="20220930 15:30:44.828" endtime="20220930 15:31:08.623">Several failures occurred:
+
+1) Failed to save screenshot 'C:\Users\Jasso\Desktop\FCS\results\screenShots'.
+
+2) Failed to save screenshot 'C:\Users\Jasso\Desktop\FCS\results\screenShots'.
+
+3) Failed to save screenshot 'C:\Users\Jasso\Desktop\FCS\results\screenShots'.
+
+4) Failed to save screenshot 'C:\Users\Jasso\Desktop\FCS\results\screenShots'.
+
+5) Failed to save screenshot 'C:\Users\Jasso\Desktop\FCS\results\screenShots'.
+
+6) Failed to save screenshot 'C:\Users\Jasso\Desktop\FCS\results\screenShots'.
+
+7) Failed to save screenshot 'C:\Users\Jasso\Desktop\FCS\results\screenShots'.
+
+8) Failed to save screenshot 'C:\Users\Jasso\Desktop\FCS\results\screenShots'.</status>
 </test>
 <doc>registro automatico de fcs</doc>
-<status status="PASS" starttime="20220923 12:50:29.715" endtime="20220923 12:51:17.883"/>
+<status status="FAIL" starttime="20220930 15:30:19.462" endtime="20220930 15:31:08.623"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="2" fail="0" skip="0" id="s1" name="regFcs">regFcs</stat>
+<stat pass="0" fail="2" skip="0" id="s1" name="regFcs">regFcs</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20220923 12:50:29.852" level="ERROR">Error in file 'C:\Users\Jasso\Desktop\FCS\resources\common_functionatilies\test_keywords.robot' on line 4: Importing library 'webdriver' failed: ModuleNotFoundError: No module named 'webdriver'
-Traceback (most recent call last):
-  None
-PYTHONPATH:
-  C:\Users\Jasso\AppData\Local\Programs\Python\Python310\Scripts\robot.exe
-  C:\Users\Jasso\AppData\Local\Programs\Python\Python310\python310.zip
-  C:\Users\Jasso\AppData\Local\Programs\Python\Python310\DLLs
-  C:\Users\Jasso\AppData\Local\Programs\Python\Python310\lib
-  C:\Users\Jasso\AppData\Local\Programs\Python\Python310
-  C:\Users\Jasso\AppData\Local\Programs\Python\Python310\lib\site-packages</msg>
 </errors>
 </robot>
