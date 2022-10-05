@@ -12,6 +12,8 @@ Resource     ../common_functionatilies/variables.robot
 -Abrir URL-
      [Arguments]   ${url_togo}   ${naveg}
     open browser    ${url_togo}   ${naveg}
+    Set Window Size     1200   1200   
+
 
 -Ir a url-
    [Arguments]   ${url_go}
@@ -23,7 +25,7 @@ Resource     ../common_functionatilies/variables.robot
     input text   ${ubicador}   ${text}
 
 -CONFIGURAR TESTCASE-
-    -CONFIGURAR DIRECTORIO SCREENSHOTS-
+       -CONFIGURAR DIRECTORIO SCREENSHOTS-
 
 -TERMINAR CONFIGURACIÓN TESTCASE-
     close all browsers
@@ -32,7 +34,9 @@ Resource     ../common_functionatilies/variables.robot
     close all browsers
 
 -CONFIGURAR DIRECTORIO SCREENSHOTS-
-    set screenshot directory         ${screenshots-folder}
+     set screenshot directory     ${screenshots-folder} 
+
+
 
 -CONFIGURACION INICIAL-
 
@@ -46,7 +50,7 @@ Resource     ../common_functionatilies/variables.robot
    FOR  ${element}   IN   @{a1}
       Scroll Element Into View   ${a1['${element}']}
       Run Keyword And Continue On Failure   Wait Until Element is Visible      ${a1['${element}']}
-      Run Keyword And Continue On Failure   capture page screenshot     ${screenshots-folder}
+      Run Keyword And Continue On Failure    capture element screenshot    ${a1['${element}']}     
    END
 
 -VALIDAR TEXTOS Y ELEMENTOS-

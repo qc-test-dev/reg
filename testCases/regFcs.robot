@@ -1,8 +1,9 @@
 *** Settings ***
 Documentation     registro automatico de fcs
-Resource     ../resources/common_functionatilies/test_keywords.robot
-Test Setup      -CONFIGURAR TESTCASE-
-Test Teardown       -TERMINAR CONFIGURACIÓN TESTCASE-
+Resource      ../resources/common_functionatilies/test_keywords.robot
+Suite Setup       -CONFIGURAR TESTCASE-
+Test Teardown        -TERMINAR CONFIGURACIÓN TESTCASE-
+
 *** Test Cases ***
 
 -Registro FCS Andres-

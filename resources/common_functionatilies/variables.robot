@@ -1,12 +1,11 @@
 *** Variables ***
 
-${browser}   Chrome
+${browser}   headlesschrome
 ${browser_headless}              headlesschrome
 
 
-${localpath}               /Users/Jasso/Desktop/FCS
-${screenshots-folder}      ${localpath}/results/screenShots
-
+${localpath}               /home/usr_admin/reg/reg
+${screenshots-folder}      ${localpath}/resources/resultados
 
 
 

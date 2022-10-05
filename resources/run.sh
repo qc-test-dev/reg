@@ -1,5 +1,5 @@
 #!/bin/bash
 
-cd ruta de servidor
+cd  /home/usr_admin/reg/reg/testCases
 
-robot --outputdir ruta de salida prueba.robot
+robot --outputdir /home/usr_admin/reg/reg/resources/resultados  regFcs.robot

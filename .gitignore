@@ -1,3 +1,6 @@
-C:\Users\Jasso\Desktop\FCS\venv
-C:\Users\Jasso\Desktop\FCS\results
+/home/usr_admin/reg/reg/resources/resultados/*
 main.py
+*.png
+*.jpg
+resources/fcs-POM/registro_pom/__pycache__/*.pyc
+
