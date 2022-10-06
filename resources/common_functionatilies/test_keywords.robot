@@ -12,6 +12,7 @@ Resource     ../common_functionatilies/variables.robot
 -Abrir URL-
      [Arguments]   ${url_togo}   ${naveg}
     open browser    ${url_togo}   ${naveg}
+    Set Window Size    1200 1200
 
 -Ir a url-
    [Arguments]   ${url_go}
@@ -46,7 +47,7 @@ Resource     ../common_functionatilies/variables.robot
    FOR  ${element}   IN   @{a1}
       Scroll Element Into View   ${a1['${element}']}
       Run Keyword And Continue On Failure   Wait Until Element is Visible      ${a1['${element}']}
-      Run Keyword And Continue On Failure   capture page screenshot     ${screenshots-folder}
+      Run Keyword And Continue On Failure   capture page screenshot     ${a1['${element}']}
    END
 
 -VALIDAR TEXTOS Y ELEMENTOS-
