@@ -1,10 +1,11 @@
 *** Variables ***
 
-${browser}   headlesschrome
+${browser}   Chrome
 ${browser_headless}              headlesschrome
 
 
-${localpath}               /home/usr_admin/reg/reg
+${localpath}               /Users/Hitss/Desktop/reg/reg
+
 ${screenshots-folder}      ${localpath}/resources/resultados
 
 
