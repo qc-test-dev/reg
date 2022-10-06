@@ -29,6 +29,8 @@ Test Teardown        -TERMINAR CONFIGURACIÓN TESTCASE-
     select from list by index  whyIsolation     3
     -CLICK ELEMENTO-       ${EndPage['boton_Continue']}
     Sleep  4s
+    wait until element is visible     ${EndPage2['score_card']}
+    capture page screenshot      
 
 #00000
 -Registro FCS Alberto-
@@ -52,6 +54,8 @@ Test Teardown        -TERMINAR CONFIGURACIÓN TESTCASE-
     #select from list by label  whyIsolation     Estoy en home office (trabajo en casa), por política de la empresa
     select from list by index  whyIsolation     3
     -CLICK ELEMENTO-       ${EndPage['boton_Continue']}
-    Sleep  3s
+    Sleep  5s
+    wait until element is visible     ${EndPage2['score_card']}
+    capture page screenshot      
     -CERRAR TODOS LOS NAVEGADORES-
 

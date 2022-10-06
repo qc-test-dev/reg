@@ -32,3 +32,5 @@ Variables     ${localpath}/resources/fcs-POM/registro_pom/clave_ini.py
 Variables     ${localpath}/resources/fcs-POM/registro_pom/Home.py
 Variables     ${localpath}/resources/fcs-POM/registro_pom/Sntms.py
 Variables     ${localpath}/resources/fcs-POM/registro_pom/EndPage.py
+
+Variables     ${localpath}/resources/fcs-POM/registro_pom/EndPage2.py

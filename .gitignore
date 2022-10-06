@@ -1,4 +1,5 @@
-/home/usr_admin/reg/reg/resources/resultados/*
+/home/usr_admin/reg/reg/resources/resultados/*.jpg
+/home/usr_admin/reg/reg/resources/resultados/*.png
 main.py
 *.png
 *.jpg
