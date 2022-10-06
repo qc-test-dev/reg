@@ -26,10 +26,10 @@ Test Teardown       -TERMINAR CONFIGURACIÓN TESTCASE-
     -VALIDAR ELEMENTOS-    ${EndPage}
     #select from list by label  whyIsolation     Estoy en home office (trabajo en casa), por política de la empresa
     select from list by index  whyIsolation     3
-    -CLICK ELEMENTO-       ${EndPage['boton_Continue']}
+#    -CLICK ELEMENTO-       ${EndPage['boton_Continue']}
     Sleep  4s
 
-#00000
+##00000
 -Registro FCS Alberto-
   -Abrir URL-   ${url_fcs_main}    ${browser}
     -VALIDAR ELEMENTOS-   ${clave_ini}
