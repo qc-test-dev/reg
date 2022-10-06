@@ -1,16 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <robot generator="Robot 5.0 (Python 3.6.9 on linux)" generated="20221006 15:03:44.378" rpa="false" schemaversion="3">
+=======
+<robot generator="Robot 5.0 (Python 3.6.9 on linux)" generated="20221006 15:58:20.092" rpa="false" schemaversion="3">
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 <suite id="s1" name="regFcs" source="/home/usr_admin/reg/reg/testCases/regFcs.robot">
 <kw name="-CONFIGURAR TESTCASE-" library="test_keywords" type="SETUP">
 <kw name="-CONFIGURAR DIRECTORIO SCREENSHOTS-" library="test_keywords">
 <kw name="Set Screenshot Directory" library="Selenium2Library">
 <arg>${screenshots-folder}</arg>
 <doc>Sets the directory for captured screenshots.</doc>
+<<<<<<< HEAD
 <status status="PASS" starttime="20221006 15:03:44.642" endtime="20221006 15:03:44.643"/>
 </kw>
 <status status="PASS" starttime="20221006 15:03:44.642" endtime="20221006 15:03:44.643"/>
 </kw>
 <status status="PASS" starttime="20221006 15:03:44.641" endtime="20221006 15:03:44.643"/>
+=======
+<status status="PASS" starttime="20221006 15:58:20.357" endtime="20221006 15:58:20.357"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:20.356" endtime="20221006 15:58:20.358"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:20.356" endtime="20221006 15:58:20.358"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <test id="s1-t1" name="-Registro FCS Andres-" line="9">
 <kw name="-Abrir URL-" library="test_keywords">
@@ -20,16 +32,27 @@
 <arg>${url_togo}</arg>
 <arg>${naveg}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
+<<<<<<< HEAD
 <msg timestamp="20221006 15:03:44.648" level="INFO">Opening browser 'headlesschrome' to base url 'https://www.fcs-monitoreo.com'.</msg>
 <status status="PASS" starttime="20221006 15:03:44.647" endtime="20221006 15:03:46.796"/>
+=======
+<msg timestamp="20221006 15:58:20.362" level="INFO">Opening browser 'headlesschrome' to base url 'https://www.fcs-monitoreo.com'.</msg>
+<status status="PASS" starttime="20221006 15:58:20.361" endtime="20221006 15:58:23.073"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="Set Window Size" library="Selenium2Library">
 <arg>1200</arg>
 <arg>1200</arg>
 <doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<<<<<<< HEAD
 <status status="PASS" starttime="20221006 15:03:46.797" endtime="20221006 15:03:46.902"/>
 </kw>
 <status status="PASS" starttime="20221006 15:03:44.646" endtime="20221006 15:03:46.903"/>
+=======
+<status status="PASS" starttime="20221006 15:58:23.074" endtime="20221006 15:58:23.179"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:20.361" endtime="20221006 15:58:23.179"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="-VALIDAR ELEMENTOS-" library="test_keywords">
 <arg>${clave_ini}</arg>
@@ -41,7 +64,11 @@
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
+<<<<<<< HEAD
 <status status="PASS" starttime="20221006 15:03:46.905" endtime="20221006 15:03:47.186"/>
+=======
+<status status="PASS" starttime="20221006 15:58:23.181" endtime="20221006 15:58:23.462"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>Wait Until Element is Visible</arg>
@@ -50,9 +77,15 @@
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
+<<<<<<< HEAD
 <status status="PASS" starttime="20221006 15:03:47.187" endtime="20221006 15:03:47.215"/>
 </kw>
 <status status="PASS" starttime="20221006 15:03:47.186" endtime="20221006 15:03:47.215"/>
+=======
+<status status="PASS" starttime="20221006 15:58:23.463" endtime="20221006 15:58:23.492"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:23.463" endtime="20221006 15:58:23.492"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>capture element screenshot</arg>
@@ -61,6 +94,7 @@
 <kw name="Capture Element Screenshot" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<<<<<<< HEAD
 <msg timestamp="20221006 15:03:47.274" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-113.png"&gt;&lt;img src="selenium-element-screenshot-113.png" width="400px"&gt;&lt;/a&gt;</msg>
 <status status="PASS" starttime="20221006 15:03:47.216" endtime="20221006 15:03:47.275"/>
 </kw>
@@ -71,16 +105,35 @@
 <status status="PASS" starttime="20221006 15:03:46.904" endtime="20221006 15:03:47.275"/>
 </for>
 <status status="PASS" starttime="20221006 15:03:46.903" endtime="20221006 15:03:47.275"/>
+=======
+<msg timestamp="20221006 15:58:23.561" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-261.png"&gt;&lt;img src="selenium-element-screenshot-261.png" width="400px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221006 15:58:23.493" endtime="20221006 15:58:23.561"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:23.492" endtime="20221006 15:58:23.561"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:23.181" endtime="20221006 15:58:23.561"/>
+</iter>
+<status status="PASS" starttime="20221006 15:58:23.180" endtime="20221006 15:58:23.561"/>
+</for>
+<status status="PASS" starttime="20221006 15:58:23.179" endtime="20221006 15:58:23.561"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="-CLICK ELEMENTO-" library="test_keywords">
 <arg>${clave_ini['boton_ingresar']}</arg>
 <kw name="Click Element" library="Selenium2Library">
 <arg>${elemento}</arg>
 <doc>Click the element identified by ``locator``.</doc>
+<<<<<<< HEAD
 <msg timestamp="20221006 15:03:47.278" level="INFO">Clicking element 'xpath=//div[@class="btn primario"]'.</msg>
 <status status="PASS" starttime="20221006 15:03:47.277" endtime="20221006 15:03:47.792"/>
 </kw>
 <status status="PASS" starttime="20221006 15:03:47.276" endtime="20221006 15:03:47.793"/>
+=======
+<msg timestamp="20221006 15:58:23.564" level="INFO">Clicking element 'xpath=//div[@class="btn primario"]'.</msg>
+<status status="PASS" starttime="20221006 15:58:23.563" endtime="20221006 15:58:24.107"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:23.562" endtime="20221006 15:58:24.107"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="-VALIDAR ELEMENTOS-" library="test_keywords">
 <arg>${elementos_log}</arg>
@@ -92,7 +145,11 @@
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
+<<<<<<< HEAD
 <status status="PASS" starttime="20221006 15:03:47.794" endtime="20221006 15:03:48.085"/>
+=======
+<status status="PASS" starttime="20221006 15:58:24.109" endtime="20221006 15:58:24.413"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>Wait Until Element is Visible</arg>
@@ -101,9 +158,15 @@
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
+<<<<<<< HEAD
 <status status="PASS" starttime="20221006 15:03:48.086" endtime="20221006 15:03:48.115"/>
 </kw>
 <status status="PASS" starttime="20221006 15:03:48.085" endtime="20221006 15:03:48.115"/>
+=======
+<status status="PASS" starttime="20221006 15:58:24.414" endtime="20221006 15:58:24.443"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:24.414" endtime="20221006 15:58:24.443"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>capture element screenshot</arg>
@@ -112,19 +175,32 @@
 <kw name="Capture Element Screenshot" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<<<<<<< HEAD
 <msg timestamp="20221006 15:03:48.174" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-114.png"&gt;&lt;img src="selenium-element-screenshot-114.png" width="400px"&gt;&lt;/a&gt;</msg>
 <status status="PASS" starttime="20221006 15:03:48.116" endtime="20221006 15:03:48.175"/>
 </kw>
 <status status="PASS" starttime="20221006 15:03:48.115" endtime="20221006 15:03:48.175"/>
 </kw>
 <status status="PASS" starttime="20221006 15:03:47.794" endtime="20221006 15:03:48.175"/>
+=======
+<msg timestamp="20221006 15:58:24.493" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-262.png"&gt;&lt;img src="selenium-element-screenshot-262.png" width="400px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221006 15:58:24.443" endtime="20221006 15:58:24.493"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:24.443" endtime="20221006 15:58:24.494"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:24.109" endtime="20221006 15:58:24.494"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </iter>
 <iter>
 <var name="${element}">input_password</var>
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
+<<<<<<< HEAD
 <status status="PASS" starttime="20221006 15:03:48.175" endtime="20221006 15:03:48.471"/>
+=======
+<status status="PASS" starttime="20221006 15:58:24.494" endtime="20221006 15:58:24.770"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>Wait Until Element is Visible</arg>
@@ -133,9 +209,15 @@
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
+<<<<<<< HEAD
 <status status="PASS" starttime="20221006 15:03:48.472" endtime="20221006 15:03:48.494"/>
 </kw>
 <status status="PASS" starttime="20221006 15:03:48.471" endtime="20221006 15:03:48.494"/>
+=======
+<status status="PASS" starttime="20221006 15:58:24.771" endtime="20221006 15:58:24.795"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:24.771" endtime="20221006 15:58:24.795"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>capture element screenshot</arg>
@@ -144,19 +226,32 @@
 <kw name="Capture Element Screenshot" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<<<<<<< HEAD
 <msg timestamp="20221006 15:03:48.558" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-115.png"&gt;&lt;img src="selenium-element-screenshot-115.png" width="400px"&gt;&lt;/a&gt;</msg>
 <status status="PASS" starttime="20221006 15:03:48.495" endtime="20221006 15:03:48.559"/>
 </kw>
 <status status="PASS" starttime="20221006 15:03:48.495" endtime="20221006 15:03:48.559"/>
 </kw>
 <status status="PASS" starttime="20221006 15:03:48.175" endtime="20221006 15:03:48.559"/>
+=======
+<msg timestamp="20221006 15:58:24.877" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-263.png"&gt;&lt;img src="selenium-element-screenshot-263.png" width="400px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221006 15:58:24.796" endtime="20221006 15:58:24.878"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:24.795" endtime="20221006 15:58:24.878"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:24.494" endtime="20221006 15:58:24.878"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </iter>
 <iter>
 <var name="${element}">boton_ingresar</var>
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
+<<<<<<< HEAD
 <status status="PASS" starttime="20221006 15:03:48.559" endtime="20221006 15:03:48.854"/>
+=======
+<status status="PASS" starttime="20221006 15:58:24.878" endtime="20221006 15:58:25.157"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>Wait Until Element is Visible</arg>
@@ -165,9 +260,15 @@
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
+<<<<<<< HEAD
 <status status="PASS" starttime="20221006 15:03:48.854" endtime="20221006 15:03:48.880"/>
 </kw>
 <status status="PASS" starttime="20221006 15:03:48.854" endtime="20221006 15:03:48.881"/>
+=======
+<status status="PASS" starttime="20221006 15:58:25.158" endtime="20221006 15:58:25.181"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:25.158" endtime="20221006 15:58:25.181"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>capture element screenshot</arg>
@@ -176,6 +277,7 @@
 <kw name="Capture Element Screenshot" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<<<<<<< HEAD
 <msg timestamp="20221006 15:03:48.942" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-116.png"&gt;&lt;img src="selenium-element-screenshot-116.png" width="400px"&gt;&lt;/a&gt;</msg>
 <status status="PASS" starttime="20221006 15:03:48.881" endtime="20221006 15:03:48.942"/>
 </kw>
@@ -186,6 +288,18 @@
 <status status="PASS" starttime="20221006 15:03:47.793" endtime="20221006 15:03:48.942"/>
 </for>
 <status status="PASS" starttime="20221006 15:03:47.793" endtime="20221006 15:03:48.942"/>
+=======
+<msg timestamp="20221006 15:58:25.261" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-264.png"&gt;&lt;img src="selenium-element-screenshot-264.png" width="400px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221006 15:58:25.181" endtime="20221006 15:58:25.261"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:25.181" endtime="20221006 15:58:25.261"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:24.878" endtime="20221006 15:58:25.261"/>
+</iter>
+<status status="PASS" starttime="20221006 15:58:24.108" endtime="20221006 15:58:25.261"/>
+</for>
+<status status="PASS" starttime="20221006 15:58:24.108" endtime="20221006 15:58:25.261"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="- Ingresar Texto -" library="test_keywords">
 <arg>${elementos_log['input_correo']}</arg>
@@ -193,17 +307,29 @@
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
+<<<<<<< HEAD
 <msg timestamp="20221006 15:03:51.945" level="INFO">Slept 3 seconds</msg>
 <status status="PASS" starttime="20221006 15:03:48.944" endtime="20221006 15:03:51.945"/>
+=======
+<msg timestamp="20221006 15:58:28.264" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221006 15:58:25.264" endtime="20221006 15:58:28.264"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>${ubicador}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<<<<<<< HEAD
 <msg timestamp="20221006 15:03:51.946" level="INFO">Typing text 'jasso.q15@outlook.com' into text field 'xpath=//input[@id="emailLogin"]'.</msg>
 <status status="PASS" starttime="20221006 15:03:51.946" endtime="20221006 15:03:52.070"/>
 </kw>
 <status status="PASS" starttime="20221006 15:03:48.943" endtime="20221006 15:03:52.070"/>
+=======
+<msg timestamp="20221006 15:58:28.266" level="INFO">Typing text 'jasso.q15@outlook.com' into text field 'xpath=//input[@id="emailLogin"]'.</msg>
+<status status="PASS" starttime="20221006 15:58:28.265" endtime="20221006 15:58:28.395"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:25.262" endtime="20221006 15:58:28.395"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="- Ingresar Texto -" library="test_keywords">
 <arg>${elementos_log['input_password']}</arg>
@@ -211,27 +337,46 @@
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
+<<<<<<< HEAD
 <msg timestamp="20221006 15:03:55.073" level="INFO">Slept 3 seconds</msg>
 <status status="PASS" starttime="20221006 15:03:52.072" endtime="20221006 15:03:55.073"/>
+=======
+<msg timestamp="20221006 15:58:31.397" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221006 15:58:28.397" endtime="20221006 15:58:31.398"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>${ubicador}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<<<<<<< HEAD
 <msg timestamp="20221006 15:03:55.074" level="INFO">Typing text 'Claro123' into text field 'xpath=//input[@id="passwordLogin"]'.</msg>
 <status status="PASS" starttime="20221006 15:03:55.074" endtime="20221006 15:03:55.189"/>
 </kw>
 <status status="PASS" starttime="20221006 15:03:52.071" endtime="20221006 15:03:55.190"/>
+=======
+<msg timestamp="20221006 15:58:31.399" level="INFO">Typing text 'Claro123' into text field 'xpath=//input[@id="passwordLogin"]'.</msg>
+<status status="PASS" starttime="20221006 15:58:31.398" endtime="20221006 15:58:31.501"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:28.395" endtime="20221006 15:58:31.502"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="-CLICK ELEMENTO-" library="test_keywords">
 <arg>${elementos_log['boton_ingresar']}</arg>
 <kw name="Click Element" library="Selenium2Library">
 <arg>${elemento}</arg>
 <doc>Click the element identified by ``locator``.</doc>
+<<<<<<< HEAD
 <msg timestamp="20221006 15:03:55.193" level="INFO">Clicking element 'xpath=//button[normalize-space()="Ingresar"]'.</msg>
 <status status="PASS" starttime="20221006 15:03:55.192" endtime="20221006 15:03:55.268"/>
 </kw>
 <status status="PASS" starttime="20221006 15:03:55.190" endtime="20221006 15:03:55.269"/>
+=======
+<msg timestamp="20221006 15:58:31.504" level="INFO">Clicking element 'xpath=//button[normalize-space()="Ingresar"]'.</msg>
+<status status="PASS" starttime="20221006 15:58:31.504" endtime="20221006 15:58:31.579"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:31.502" endtime="20221006 15:58:31.579"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="-VALIDAR ELEMENTOS-" library="test_keywords">
 <arg>${Home}</arg>
@@ -243,7 +388,11 @@
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
+<<<<<<< HEAD
 <status status="PASS" starttime="20221006 15:03:55.270" endtime="20221006 15:03:56.306"/>
+=======
+<status status="PASS" starttime="20221006 15:58:31.581" endtime="20221006 15:58:32.605"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>Wait Until Element is Visible</arg>
@@ -252,9 +401,15 @@
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
+<<<<<<< HEAD
 <status status="PASS" starttime="20221006 15:03:56.307" endtime="20221006 15:03:56.331"/>
 </kw>
 <status status="PASS" starttime="20221006 15:03:56.307" endtime="20221006 15:03:56.331"/>
+=======
+<status status="PASS" starttime="20221006 15:58:32.606" endtime="20221006 15:58:32.632"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:32.606" endtime="20221006 15:58:32.632"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>capture element screenshot</arg>
@@ -263,6 +418,7 @@
 <kw name="Capture Element Screenshot" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<<<<<<< HEAD
 <msg timestamp="20221006 15:03:56.405" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-117.png"&gt;&lt;img src="selenium-element-screenshot-117.png" width="400px"&gt;&lt;/a&gt;</msg>
 <status status="PASS" starttime="20221006 15:03:56.332" endtime="20221006 15:03:56.406"/>
 </kw>
@@ -273,16 +429,35 @@
 <status status="PASS" starttime="20221006 15:03:55.270" endtime="20221006 15:03:56.406"/>
 </for>
 <status status="PASS" starttime="20221006 15:03:55.269" endtime="20221006 15:03:56.406"/>
+=======
+<msg timestamp="20221006 15:58:32.709" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-265.png"&gt;&lt;img src="selenium-element-screenshot-265.png" width="400px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221006 15:58:32.633" endtime="20221006 15:58:32.709"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:32.633" endtime="20221006 15:58:32.709"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:31.581" endtime="20221006 15:58:32.709"/>
+</iter>
+<status status="PASS" starttime="20221006 15:58:31.580" endtime="20221006 15:58:32.709"/>
+</for>
+<status status="PASS" starttime="20221006 15:58:31.580" endtime="20221006 15:58:32.709"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="-CLICK ELEMENTO-" library="test_keywords">
 <arg>${Home['boton_RM']}</arg>
 <kw name="Click Element" library="Selenium2Library">
 <arg>${elemento}</arg>
 <doc>Click the element identified by ``locator``.</doc>
+<<<<<<< HEAD
 <msg timestamp="20221006 15:03:56.409" level="INFO">Clicking element 'xpath=//a[@class="btn-manual primario"]'.</msg>
 <status status="PASS" starttime="20221006 15:03:56.408" endtime="20221006 15:03:56.883"/>
 </kw>
 <status status="PASS" starttime="20221006 15:03:56.406" endtime="20221006 15:03:56.883"/>
+=======
+<msg timestamp="20221006 15:58:32.712" level="INFO">Clicking element 'xpath=//a[@class="btn-manual primario"]'.</msg>
+<status status="PASS" starttime="20221006 15:58:32.711" endtime="20221006 15:58:33.492"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:32.710" endtime="20221006 15:58:33.493"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="-VALIDAR ELEMENTOS-" library="test_keywords">
 <arg>${Sntms}</arg>
@@ -294,7 +469,11 @@
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
+<<<<<<< HEAD
 <status status="PASS" starttime="20221006 15:03:56.885" endtime="20221006 15:03:57.171"/>
+=======
+<status status="PASS" starttime="20221006 15:58:33.494" endtime="20221006 15:58:33.787"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>Wait Until Element is Visible</arg>
@@ -303,9 +482,15 @@
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
+<<<<<<< HEAD
 <status status="PASS" starttime="20221006 15:03:57.171" endtime="20221006 15:03:57.197"/>
 </kw>
 <status status="PASS" starttime="20221006 15:03:57.171" endtime="20221006 15:03:57.197"/>
+=======
+<status status="PASS" starttime="20221006 15:58:33.788" endtime="20221006 15:58:33.811"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:33.788" endtime="20221006 15:58:33.811"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>capture element screenshot</arg>
@@ -314,19 +499,32 @@
 <kw name="Capture Element Screenshot" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<<<<<<< HEAD
 <msg timestamp="20221006 15:03:57.292" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-118.png"&gt;&lt;img src="selenium-element-screenshot-118.png" width="400px"&gt;&lt;/a&gt;</msg>
 <status status="PASS" starttime="20221006 15:03:57.198" endtime="20221006 15:03:57.292"/>
 </kw>
 <status status="PASS" starttime="20221006 15:03:57.197" endtime="20221006 15:03:57.292"/>
 </kw>
 <status status="PASS" starttime="20221006 15:03:56.884" endtime="20221006 15:03:57.293"/>
+=======
+<msg timestamp="20221006 15:58:33.878" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-266.png"&gt;&lt;img src="selenium-element-screenshot-266.png" width="400px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221006 15:58:33.812" endtime="20221006 15:58:33.878"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:33.812" endtime="20221006 15:58:33.878"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:33.494" endtime="20221006 15:58:33.878"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </iter>
 <iter>
 <var name="${element}">boton_Continue</var>
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
+<<<<<<< HEAD
 <status status="PASS" starttime="20221006 15:03:57.293" endtime="20221006 15:03:57.589"/>
+=======
+<status status="PASS" starttime="20221006 15:58:33.879" endtime="20221006 15:58:34.156"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>Wait Until Element is Visible</arg>
@@ -335,9 +533,15 @@
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
+<<<<<<< HEAD
 <status status="PASS" starttime="20221006 15:03:57.590" endtime="20221006 15:03:57.639"/>
 </kw>
 <status status="PASS" starttime="20221006 15:03:57.589" endtime="20221006 15:03:57.639"/>
+=======
+<status status="PASS" starttime="20221006 15:58:34.157" endtime="20221006 15:58:34.180"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:34.157" endtime="20221006 15:58:34.180"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>capture element screenshot</arg>
@@ -346,6 +550,7 @@
 <kw name="Capture Element Screenshot" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<<<<<<< HEAD
 <msg timestamp="20221006 15:03:57.708" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-119.png"&gt;&lt;img src="selenium-element-screenshot-119.png" width="400px"&gt;&lt;/a&gt;</msg>
 <status status="PASS" starttime="20221006 15:03:57.639" endtime="20221006 15:03:57.708"/>
 </kw>
@@ -356,6 +561,18 @@
 <status status="PASS" starttime="20221006 15:03:56.884" endtime="20221006 15:03:57.708"/>
 </for>
 <status status="PASS" starttime="20221006 15:03:56.883" endtime="20221006 15:03:57.709"/>
+=======
+<msg timestamp="20221006 15:58:34.260" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-267.png"&gt;&lt;img src="selenium-element-screenshot-267.png" width="400px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221006 15:58:34.181" endtime="20221006 15:58:34.260"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:34.180" endtime="20221006 15:58:34.260"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:33.878" endtime="20221006 15:58:34.260"/>
+</iter>
+<status status="PASS" starttime="20221006 15:58:33.494" endtime="20221006 15:58:34.261"/>
+</for>
+<status status="PASS" starttime="20221006 15:58:33.493" endtime="20221006 15:58:34.261"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="- Ingresar Texto -" library="test_keywords">
 <arg>${Sntms['input_oxim']}</arg>
@@ -363,27 +580,46 @@
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
+<<<<<<< HEAD
 <msg timestamp="20221006 15:04:00.711" level="INFO">Slept 3 seconds</msg>
 <status status="PASS" starttime="20221006 15:03:57.711" endtime="20221006 15:04:00.711"/>
+=======
+<msg timestamp="20221006 15:58:37.264" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221006 15:58:34.263" endtime="20221006 15:58:37.264"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>${ubicador}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<<<<<<< HEAD
 <msg timestamp="20221006 15:04:00.713" level="INFO">Typing text '92' into text field 'xpath=//input[@id="idOximetry"]'.</msg>
 <status status="PASS" starttime="20221006 15:04:00.712" endtime="20221006 15:04:00.811"/>
 </kw>
 <status status="PASS" starttime="20221006 15:03:57.709" endtime="20221006 15:04:00.811"/>
+=======
+<msg timestamp="20221006 15:58:37.266" level="INFO">Typing text '92' into text field 'xpath=//input[@id="idOximetry"]'.</msg>
+<status status="PASS" starttime="20221006 15:58:37.264" endtime="20221006 15:58:37.366"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:34.261" endtime="20221006 15:58:37.366"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="-CLICK ELEMENTO-" library="test_keywords">
 <arg>${Sntms['boton_Continue']}</arg>
 <kw name="Click Element" library="Selenium2Library">
 <arg>${elemento}</arg>
 <doc>Click the element identified by ``locator``.</doc>
+<<<<<<< HEAD
 <msg timestamp="20221006 15:04:00.814" level="INFO">Clicking element 'xpath=//button[@class="btn primario firstForm"]'.</msg>
 <status status="PASS" starttime="20221006 15:04:00.813" endtime="20221006 15:04:00.888"/>
 </kw>
 <status status="PASS" starttime="20221006 15:04:00.812" endtime="20221006 15:04:00.889"/>
+=======
+<msg timestamp="20221006 15:58:37.369" level="INFO">Clicking element 'xpath=//button[@class="btn primario firstForm"]'.</msg>
+<status status="PASS" starttime="20221006 15:58:37.368" endtime="20221006 15:58:37.447"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:37.366" endtime="20221006 15:58:37.447"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="-VALIDAR ELEMENTOS-" library="test_keywords">
 <arg>${EndPage}</arg>
@@ -395,7 +631,11 @@
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
+<<<<<<< HEAD
 <status status="PASS" starttime="20221006 15:04:00.890" endtime="20221006 15:04:01.168"/>
+=======
+<status status="PASS" starttime="20221006 15:58:37.449" endtime="20221006 15:58:37.738"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>Wait Until Element is Visible</arg>
@@ -404,9 +644,15 @@
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
+<<<<<<< HEAD
 <status status="PASS" starttime="20221006 15:04:01.168" endtime="20221006 15:04:01.191"/>
 </kw>
 <status status="PASS" starttime="20221006 15:04:01.168" endtime="20221006 15:04:01.191"/>
+=======
+<status status="PASS" starttime="20221006 15:58:37.739" endtime="20221006 15:58:37.762"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:37.739" endtime="20221006 15:58:37.762"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>capture element screenshot</arg>
@@ -415,6 +661,7 @@
 <kw name="Capture Element Screenshot" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<<<<<<< HEAD
 <msg timestamp="20221006 15:04:01.241" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-120.png"&gt;&lt;img src="selenium-element-screenshot-120.png" width="400px"&gt;&lt;/a&gt;</msg>
 <status status="PASS" starttime="20221006 15:04:01.192" endtime="20221006 15:04:01.241"/>
 </kw>
@@ -425,40 +672,87 @@
 <status status="PASS" starttime="20221006 15:04:00.890" endtime="20221006 15:04:01.241"/>
 </for>
 <status status="PASS" starttime="20221006 15:04:00.889" endtime="20221006 15:04:01.241"/>
+=======
+<msg timestamp="20221006 15:58:37.827" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-268.png"&gt;&lt;img src="selenium-element-screenshot-268.png" width="400px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221006 15:58:37.763" endtime="20221006 15:58:37.827"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:37.763" endtime="20221006 15:58:37.827"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:37.448" endtime="20221006 15:58:37.827"/>
+</iter>
+<status status="PASS" starttime="20221006 15:58:37.448" endtime="20221006 15:58:37.827"/>
+</for>
+<status status="PASS" starttime="20221006 15:58:37.447" endtime="20221006 15:58:37.827"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="Select From List By Index" library="Selenium2Library">
 <arg>whyIsolation</arg>
 <arg>3</arg>
 <doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<<<<<<< HEAD
 <msg timestamp="20221006 15:04:01.242" level="INFO">Selecting options from selection list 'whyIsolation' by index 3.</msg>
 <status status="PASS" starttime="20221006 15:04:01.242" endtime="20221006 15:04:01.374"/>
+=======
+<msg timestamp="20221006 15:58:37.828" level="INFO">Selecting options from selection list 'whyIsolation' by index 3.</msg>
+<status status="PASS" starttime="20221006 15:58:37.828" endtime="20221006 15:58:37.953"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="-CLICK ELEMENTO-" library="test_keywords">
 <arg>${EndPage['boton_Continue']}</arg>
 <kw name="Click Element" library="Selenium2Library">
 <arg>${elemento}</arg>
 <doc>Click the element identified by ``locator``.</doc>
+<<<<<<< HEAD
 <msg timestamp="20221006 15:04:01.377" level="INFO">Clicking element 'xpath=//button[@class="btn primario lastForm"]'.</msg>
 <status status="PASS" starttime="20221006 15:04:01.376" endtime="20221006 15:04:01.432"/>
 </kw>
 <status status="PASS" starttime="20221006 15:04:01.374" endtime="20221006 15:04:01.432"/>
+=======
+<msg timestamp="20221006 15:58:37.956" level="INFO">Clicking element 'xpath=//button[@class="btn primario lastForm"]'.</msg>
+<status status="PASS" starttime="20221006 15:58:37.956" endtime="20221006 15:58:38.013"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:37.954" endtime="20221006 15:58:38.013"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>4s</arg>
 <doc>Pauses the test executed for the given time.</doc>
+<<<<<<< HEAD
 <msg timestamp="20221006 15:04:05.433" level="INFO">Slept 4 seconds</msg>
 <status status="PASS" starttime="20221006 15:04:01.432" endtime="20221006 15:04:05.433"/>
+=======
+<msg timestamp="20221006 15:58:42.014" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20221006 15:58:38.014" endtime="20221006 15:58:42.015"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${EndPage2['score_card']}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221006 15:58:42.015" endtime="20221006 15:58:42.047"/>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221006 15:58:42.256" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-45.png"&gt;&lt;img src="selenium-screenshot-45.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221006 15:58:42.047" endtime="20221006 15:58:42.256"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="-TERMINAR CONFIGURACIÓN TESTCASE-" library="test_keywords" type="TEARDOWN">
 <kw name="Close All Browsers" library="Selenium2Library">
 <doc>Closes all open browsers and resets the browser cache.</doc>
+<<<<<<< HEAD
 <status status="PASS" starttime="20221006 15:04:05.435" endtime="20221006 15:04:05.495"/>
 </kw>
 <status status="PASS" starttime="20221006 15:04:05.434" endtime="20221006 15:04:05.495"/>
 </kw>
 <status status="PASS" starttime="20221006 15:03:44.644" endtime="20221006 15:04:05.495"/>
+=======
+<status status="PASS" starttime="20221006 15:58:42.258" endtime="20221006 15:58:42.318"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:42.257" endtime="20221006 15:58:42.318"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:20.358" endtime="20221006 15:58:42.318"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </test>
-<test id="s1-t2" name="-Registro FCS Alberto-" line="34">
+<test id="s1-t2" name="-Registro FCS Alberto-" line="36">
 <kw name="-Abrir URL-" library="test_keywords">
 <arg>${url_fcs_main}</arg>
 <arg>${browser}</arg>
@@ -466,16 +760,27 @@
 <arg>${url_togo}</arg>
 <arg>${naveg}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
+<<<<<<< HEAD
 <msg timestamp="20221006 15:04:05.499" level="INFO">Opening browser 'headlesschrome' to base url 'https://www.fcs-monitoreo.com'.</msg>
 <status status="PASS" starttime="20221006 15:04:05.498" endtime="20221006 15:04:08.022"/>
+=======
+<msg timestamp="20221006 15:58:42.322" level="INFO">Opening browser 'headlesschrome' to base url 'https://www.fcs-monitoreo.com'.</msg>
+<status status="PASS" starttime="20221006 15:58:42.321" endtime="20221006 15:58:44.581"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="Set Window Size" library="Selenium2Library">
 <arg>1200</arg>
 <arg>1200</arg>
 <doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<<<<<<< HEAD
 <status status="PASS" starttime="20221006 15:04:08.023" endtime="20221006 15:04:08.164"/>
 </kw>
 <status status="PASS" starttime="20221006 15:04:05.497" endtime="20221006 15:04:08.165"/>
+=======
+<status status="PASS" starttime="20221006 15:58:44.582" endtime="20221006 15:58:44.687"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:42.320" endtime="20221006 15:58:44.687"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="-VALIDAR ELEMENTOS-" library="test_keywords">
 <arg>${clave_ini}</arg>
@@ -487,7 +792,11 @@
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
+<<<<<<< HEAD
 <status status="PASS" starttime="20221006 15:04:08.167" endtime="20221006 15:04:08.448"/>
+=======
+<status status="PASS" starttime="20221006 15:58:44.689" endtime="20221006 15:58:44.969"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>Wait Until Element is Visible</arg>
@@ -496,9 +805,15 @@
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
+<<<<<<< HEAD
 <status status="PASS" starttime="20221006 15:04:08.449" endtime="20221006 15:04:08.477"/>
 </kw>
 <status status="PASS" starttime="20221006 15:04:08.449" endtime="20221006 15:04:08.478"/>
+=======
+<status status="PASS" starttime="20221006 15:58:44.970" endtime="20221006 15:58:44.997"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:44.969" endtime="20221006 15:58:44.998"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>capture element screenshot</arg>
@@ -507,6 +822,7 @@
 <kw name="Capture Element Screenshot" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<<<<<<< HEAD
 <msg timestamp="20221006 15:04:08.540" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-121.png"&gt;&lt;img src="selenium-element-screenshot-121.png" width="400px"&gt;&lt;/a&gt;</msg>
 <status status="PASS" starttime="20221006 15:04:08.478" endtime="20221006 15:04:08.540"/>
 </kw>
@@ -517,16 +833,35 @@
 <status status="PASS" starttime="20221006 15:04:08.166" endtime="20221006 15:04:08.541"/>
 </for>
 <status status="PASS" starttime="20221006 15:04:08.165" endtime="20221006 15:04:08.541"/>
+=======
+<msg timestamp="20221006 15:58:45.059" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-269.png"&gt;&lt;img src="selenium-element-screenshot-269.png" width="400px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221006 15:58:44.998" endtime="20221006 15:58:45.059"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:44.998" endtime="20221006 15:58:45.059"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:44.689" endtime="20221006 15:58:45.059"/>
+</iter>
+<status status="PASS" starttime="20221006 15:58:44.689" endtime="20221006 15:58:45.059"/>
+</for>
+<status status="PASS" starttime="20221006 15:58:44.688" endtime="20221006 15:58:45.059"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="-CLICK ELEMENTO-" library="test_keywords">
 <arg>${clave_ini['boton_ingresar']}</arg>
 <kw name="Click Element" library="Selenium2Library">
 <arg>${elemento}</arg>
 <doc>Click the element identified by ``locator``.</doc>
+<<<<<<< HEAD
 <msg timestamp="20221006 15:04:08.544" level="INFO">Clicking element 'xpath=//div[@class="btn primario"]'.</msg>
 <status status="PASS" starttime="20221006 15:04:08.543" endtime="20221006 15:04:09.045"/>
 </kw>
 <status status="PASS" starttime="20221006 15:04:08.541" endtime="20221006 15:04:09.045"/>
+=======
+<msg timestamp="20221006 15:58:45.062" level="INFO">Clicking element 'xpath=//div[@class="btn primario"]'.</msg>
+<status status="PASS" starttime="20221006 15:58:45.061" endtime="20221006 15:58:45.550"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:45.060" endtime="20221006 15:58:45.551"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="-VALIDAR ELEMENTOS-" library="test_keywords">
 <arg>${elementos_log}</arg>
@@ -538,7 +873,11 @@
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
+<<<<<<< HEAD
 <status status="PASS" starttime="20221006 15:04:09.047" endtime="20221006 15:04:09.349"/>
+=======
+<status status="PASS" starttime="20221006 15:58:45.552" endtime="20221006 15:58:45.844"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>Wait Until Element is Visible</arg>
@@ -547,9 +886,15 @@
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
+<<<<<<< HEAD
 <status status="PASS" starttime="20221006 15:04:09.350" endtime="20221006 15:04:09.377"/>
 </kw>
 <status status="PASS" starttime="20221006 15:04:09.349" endtime="20221006 15:04:09.377"/>
+=======
+<status status="PASS" starttime="20221006 15:58:45.845" endtime="20221006 15:58:45.873"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:45.845" endtime="20221006 15:58:45.873"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>capture element screenshot</arg>
@@ -558,19 +903,32 @@
 <kw name="Capture Element Screenshot" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<<<<<<< HEAD
 <msg timestamp="20221006 15:04:09.457" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-122.png"&gt;&lt;img src="selenium-element-screenshot-122.png" width="400px"&gt;&lt;/a&gt;</msg>
 <status status="PASS" starttime="20221006 15:04:09.378" endtime="20221006 15:04:09.457"/>
 </kw>
 <status status="PASS" starttime="20221006 15:04:09.377" endtime="20221006 15:04:09.457"/>
 </kw>
 <status status="PASS" starttime="20221006 15:04:09.047" endtime="20221006 15:04:09.457"/>
+=======
+<msg timestamp="20221006 15:58:45.926" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-270.png"&gt;&lt;img src="selenium-element-screenshot-270.png" width="400px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221006 15:58:45.873" endtime="20221006 15:58:45.926"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:45.873" endtime="20221006 15:58:45.926"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:45.552" endtime="20221006 15:58:45.926"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </iter>
 <iter>
 <var name="${element}">input_password</var>
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
+<<<<<<< HEAD
 <status status="PASS" starttime="20221006 15:04:09.458" endtime="20221006 15:04:09.736"/>
+=======
+<status status="PASS" starttime="20221006 15:58:45.926" endtime="20221006 15:58:46.205"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>Wait Until Element is Visible</arg>
@@ -579,9 +937,15 @@
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
+<<<<<<< HEAD
 <status status="PASS" starttime="20221006 15:04:09.737" endtime="20221006 15:04:09.760"/>
 </kw>
 <status status="PASS" starttime="20221006 15:04:09.736" endtime="20221006 15:04:09.760"/>
+=======
+<status status="PASS" starttime="20221006 15:58:46.205" endtime="20221006 15:58:46.227"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:46.205" endtime="20221006 15:58:46.227"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>capture element screenshot</arg>
@@ -590,19 +954,32 @@
 <kw name="Capture Element Screenshot" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<<<<<<< HEAD
 <msg timestamp="20221006 15:04:09.823" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-123.png"&gt;&lt;img src="selenium-element-screenshot-123.png" width="400px"&gt;&lt;/a&gt;</msg>
 <status status="PASS" starttime="20221006 15:04:09.760" endtime="20221006 15:04:09.824"/>
 </kw>
 <status status="PASS" starttime="20221006 15:04:09.760" endtime="20221006 15:04:09.824"/>
 </kw>
 <status status="PASS" starttime="20221006 15:04:09.457" endtime="20221006 15:04:09.824"/>
+=======
+<msg timestamp="20221006 15:58:46.292" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-271.png"&gt;&lt;img src="selenium-element-screenshot-271.png" width="400px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221006 15:58:46.228" endtime="20221006 15:58:46.293"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:46.228" endtime="20221006 15:58:46.293"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:45.926" endtime="20221006 15:58:46.293"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </iter>
 <iter>
 <var name="${element}">boton_ingresar</var>
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
+<<<<<<< HEAD
 <status status="PASS" starttime="20221006 15:04:09.824" endtime="20221006 15:04:10.102"/>
+=======
+<status status="PASS" starttime="20221006 15:58:46.293" endtime="20221006 15:58:46.574"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>Wait Until Element is Visible</arg>
@@ -611,9 +988,15 @@
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
+<<<<<<< HEAD
 <status status="PASS" starttime="20221006 15:04:10.103" endtime="20221006 15:04:10.126"/>
 </kw>
 <status status="PASS" starttime="20221006 15:04:10.103" endtime="20221006 15:04:10.126"/>
+=======
+<status status="PASS" starttime="20221006 15:58:46.575" endtime="20221006 15:58:46.597"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:46.574" endtime="20221006 15:58:46.597"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>capture element screenshot</arg>
@@ -622,6 +1005,7 @@
 <kw name="Capture Element Screenshot" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<<<<<<< HEAD
 <msg timestamp="20221006 15:04:10.208" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-124.png"&gt;&lt;img src="selenium-element-screenshot-124.png" width="400px"&gt;&lt;/a&gt;</msg>
 <status status="PASS" starttime="20221006 15:04:10.126" endtime="20221006 15:04:10.208"/>
 </kw>
@@ -632,6 +1016,18 @@
 <status status="PASS" starttime="20221006 15:04:09.046" endtime="20221006 15:04:10.208"/>
 </for>
 <status status="PASS" starttime="20221006 15:04:09.046" endtime="20221006 15:04:10.208"/>
+=======
+<msg timestamp="20221006 15:58:46.659" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-272.png"&gt;&lt;img src="selenium-element-screenshot-272.png" width="400px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221006 15:58:46.598" endtime="20221006 15:58:46.659"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:46.598" endtime="20221006 15:58:46.659"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:46.293" endtime="20221006 15:58:46.660"/>
+</iter>
+<status status="PASS" starttime="20221006 15:58:45.551" endtime="20221006 15:58:46.660"/>
+</for>
+<status status="PASS" starttime="20221006 15:58:45.551" endtime="20221006 15:58:46.660"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="- Ingresar Texto -" library="test_keywords">
 <arg>${elementos_log['input_correo']}</arg>
@@ -639,17 +1035,29 @@
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
+<<<<<<< HEAD
 <msg timestamp="20221006 15:04:13.211" level="INFO">Slept 3 seconds</msg>
 <status status="PASS" starttime="20221006 15:04:10.210" endtime="20221006 15:04:13.211"/>
+=======
+<msg timestamp="20221006 15:58:49.663" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221006 15:58:46.662" endtime="20221006 15:58:49.663"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>${ubicador}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<<<<<<< HEAD
 <msg timestamp="20221006 15:04:13.212" level="INFO">Typing text 's_tamezaa@globalhitss.com' into text field 'xpath=//input[@id="emailLogin"]'.</msg>
 <status status="PASS" starttime="20221006 15:04:13.212" endtime="20221006 15:04:13.345"/>
 </kw>
 <status status="PASS" starttime="20221006 15:04:10.209" endtime="20221006 15:04:13.345"/>
+=======
+<msg timestamp="20221006 15:58:49.664" level="INFO">Typing text 's_tamezaa@globalhitss.com' into text field 'xpath=//input[@id="emailLogin"]'.</msg>
+<status status="PASS" starttime="20221006 15:58:49.663" endtime="20221006 15:58:49.798"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:46.660" endtime="20221006 15:58:49.798"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="- Ingresar Texto -" library="test_keywords">
 <arg>${elementos_log['input_password']}</arg>
@@ -657,27 +1065,46 @@
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
+<<<<<<< HEAD
 <msg timestamp="20221006 15:04:16.348" level="INFO">Slept 3 seconds</msg>
 <status status="PASS" starttime="20221006 15:04:13.347" endtime="20221006 15:04:16.348"/>
+=======
+<msg timestamp="20221006 15:58:52.801" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221006 15:58:49.800" endtime="20221006 15:58:52.801"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>${ubicador}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<<<<<<< HEAD
 <msg timestamp="20221006 15:04:16.349" level="INFO">Typing text '123456' into text field 'xpath=//input[@id="passwordLogin"]'.</msg>
 <status status="PASS" starttime="20221006 15:04:16.348" endtime="20221006 15:04:16.454"/>
 </kw>
 <status status="PASS" starttime="20221006 15:04:13.345" endtime="20221006 15:04:16.454"/>
+=======
+<msg timestamp="20221006 15:58:52.802" level="INFO">Typing text '123456' into text field 'xpath=//input[@id="passwordLogin"]'.</msg>
+<status status="PASS" starttime="20221006 15:58:52.801" endtime="20221006 15:58:52.908"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:49.798" endtime="20221006 15:58:52.908"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="-CLICK ELEMENTO-" library="test_keywords">
 <arg>${elementos_log['boton_ingresar']}</arg>
 <kw name="Click Element" library="Selenium2Library">
 <arg>${elemento}</arg>
 <doc>Click the element identified by ``locator``.</doc>
+<<<<<<< HEAD
 <msg timestamp="20221006 15:04:16.456" level="INFO">Clicking element 'xpath=//button[normalize-space()="Ingresar"]'.</msg>
 <status status="PASS" starttime="20221006 15:04:16.456" endtime="20221006 15:04:16.527"/>
 </kw>
 <status status="PASS" starttime="20221006 15:04:16.454" endtime="20221006 15:04:16.528"/>
+=======
+<msg timestamp="20221006 15:58:52.911" level="INFO">Clicking element 'xpath=//button[normalize-space()="Ingresar"]'.</msg>
+<status status="PASS" starttime="20221006 15:58:52.910" endtime="20221006 15:58:52.980"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:52.909" endtime="20221006 15:58:52.980"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="-VALIDAR ELEMENTOS-" library="test_keywords">
 <arg>${Home}</arg>
@@ -689,7 +1116,11 @@
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
+<<<<<<< HEAD
 <status status="PASS" starttime="20221006 15:04:16.529" endtime="20221006 15:04:17.902"/>
+=======
+<status status="PASS" starttime="20221006 15:58:52.982" endtime="20221006 15:58:53.968"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>Wait Until Element is Visible</arg>
@@ -698,9 +1129,15 @@
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
+<<<<<<< HEAD
 <status status="PASS" starttime="20221006 15:04:17.903" endtime="20221006 15:04:17.927"/>
 </kw>
 <status status="PASS" starttime="20221006 15:04:17.903" endtime="20221006 15:04:17.927"/>
+=======
+<status status="PASS" starttime="20221006 15:58:53.969" endtime="20221006 15:58:54.010"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:53.968" endtime="20221006 15:58:54.010"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>capture element screenshot</arg>
@@ -709,6 +1146,7 @@
 <kw name="Capture Element Screenshot" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<<<<<<< HEAD
 <msg timestamp="20221006 15:04:17.988" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-125.png"&gt;&lt;img src="selenium-element-screenshot-125.png" width="400px"&gt;&lt;/a&gt;</msg>
 <status status="PASS" starttime="20221006 15:04:17.928" endtime="20221006 15:04:17.988"/>
 </kw>
@@ -719,16 +1157,35 @@
 <status status="PASS" starttime="20221006 15:04:16.528" endtime="20221006 15:04:17.988"/>
 </for>
 <status status="PASS" starttime="20221006 15:04:16.528" endtime="20221006 15:04:17.988"/>
+=======
+<msg timestamp="20221006 15:58:54.073" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-273.png"&gt;&lt;img src="selenium-element-screenshot-273.png" width="400px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221006 15:58:54.011" endtime="20221006 15:58:54.073"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:54.011" endtime="20221006 15:58:54.074"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:52.982" endtime="20221006 15:58:54.074"/>
+</iter>
+<status status="PASS" starttime="20221006 15:58:52.981" endtime="20221006 15:58:54.074"/>
+</for>
+<status status="PASS" starttime="20221006 15:58:52.981" endtime="20221006 15:58:54.074"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="-CLICK ELEMENTO-" library="test_keywords">
 <arg>${Home['boton_RM']}</arg>
 <kw name="Click Element" library="Selenium2Library">
 <arg>${elemento}</arg>
 <doc>Click the element identified by ``locator``.</doc>
+<<<<<<< HEAD
 <msg timestamp="20221006 15:04:17.991" level="INFO">Clicking element 'xpath=//a[@class="btn-manual primario"]'.</msg>
 <status status="PASS" starttime="20221006 15:04:17.990" endtime="20221006 15:04:18.414"/>
 </kw>
 <status status="PASS" starttime="20221006 15:04:17.989" endtime="20221006 15:04:18.414"/>
+=======
+<msg timestamp="20221006 15:58:54.076" level="INFO">Clicking element 'xpath=//a[@class="btn-manual primario"]'.</msg>
+<status status="PASS" starttime="20221006 15:58:54.076" endtime="20221006 15:58:54.489"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:54.074" endtime="20221006 15:58:54.489"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="-VALIDAR ELEMENTOS-" library="test_keywords">
 <arg>${Sntms}</arg>
@@ -740,7 +1197,11 @@
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
+<<<<<<< HEAD
 <status status="PASS" starttime="20221006 15:04:18.416" endtime="20221006 15:04:18.720"/>
+=======
+<status status="PASS" starttime="20221006 15:58:54.491" endtime="20221006 15:58:54.772"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>Wait Until Element is Visible</arg>
@@ -749,9 +1210,15 @@
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
+<<<<<<< HEAD
 <status status="PASS" starttime="20221006 15:04:18.721" endtime="20221006 15:04:18.751"/>
 </kw>
 <status status="PASS" starttime="20221006 15:04:18.720" endtime="20221006 15:04:18.752"/>
+=======
+<status status="PASS" starttime="20221006 15:58:54.773" endtime="20221006 15:58:54.799"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:54.772" endtime="20221006 15:58:54.799"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>capture element screenshot</arg>
@@ -760,19 +1227,32 @@
 <kw name="Capture Element Screenshot" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<<<<<<< HEAD
 <msg timestamp="20221006 15:04:18.841" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-126.png"&gt;&lt;img src="selenium-element-screenshot-126.png" width="400px"&gt;&lt;/a&gt;</msg>
 <status status="PASS" starttime="20221006 15:04:18.752" endtime="20221006 15:04:18.841"/>
 </kw>
 <status status="PASS" starttime="20221006 15:04:18.752" endtime="20221006 15:04:18.841"/>
 </kw>
 <status status="PASS" starttime="20221006 15:04:18.416" endtime="20221006 15:04:18.842"/>
+=======
+<msg timestamp="20221006 15:58:54.862" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-274.png"&gt;&lt;img src="selenium-element-screenshot-274.png" width="400px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221006 15:58:54.800" endtime="20221006 15:58:54.862"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:54.800" endtime="20221006 15:58:54.863"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:54.490" endtime="20221006 15:58:54.863"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </iter>
 <iter>
 <var name="${element}">boton_Continue</var>
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
+<<<<<<< HEAD
 <status status="PASS" starttime="20221006 15:04:18.842" endtime="20221006 15:04:19.139"/>
+=======
+<status status="PASS" starttime="20221006 15:58:54.863" endtime="20221006 15:58:55.144"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>Wait Until Element is Visible</arg>
@@ -781,9 +1261,15 @@
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
+<<<<<<< HEAD
 <status status="PASS" starttime="20221006 15:04:19.140" endtime="20221006 15:04:19.162"/>
 </kw>
 <status status="PASS" starttime="20221006 15:04:19.140" endtime="20221006 15:04:19.163"/>
+=======
+<status status="PASS" starttime="20221006 15:58:55.145" endtime="20221006 15:58:55.167"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:55.144" endtime="20221006 15:58:55.167"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>capture element screenshot</arg>
@@ -792,6 +1278,7 @@
 <kw name="Capture Element Screenshot" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<<<<<<< HEAD
 <msg timestamp="20221006 15:04:19.240" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-127.png"&gt;&lt;img src="selenium-element-screenshot-127.png" width="400px"&gt;&lt;/a&gt;</msg>
 <status status="PASS" starttime="20221006 15:04:19.163" endtime="20221006 15:04:19.240"/>
 </kw>
@@ -802,6 +1289,18 @@
 <status status="PASS" starttime="20221006 15:04:18.416" endtime="20221006 15:04:19.240"/>
 </for>
 <status status="PASS" starttime="20221006 15:04:18.415" endtime="20221006 15:04:19.241"/>
+=======
+<msg timestamp="20221006 15:58:55.226" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-275.png"&gt;&lt;img src="selenium-element-screenshot-275.png" width="400px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221006 15:58:55.167" endtime="20221006 15:58:55.226"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:55.167" endtime="20221006 15:58:55.226"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:54.863" endtime="20221006 15:58:55.227"/>
+</iter>
+<status status="PASS" starttime="20221006 15:58:54.490" endtime="20221006 15:58:55.227"/>
+</for>
+<status status="PASS" starttime="20221006 15:58:54.489" endtime="20221006 15:58:55.227"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="- Ingresar Texto -" library="test_keywords">
 <arg>${Sntms['input_oxim']}</arg>
@@ -809,27 +1308,46 @@
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
+<<<<<<< HEAD
 <msg timestamp="20221006 15:04:22.243" level="INFO">Slept 3 seconds</msg>
 <status status="PASS" starttime="20221006 15:04:19.242" endtime="20221006 15:04:22.243"/>
+=======
+<msg timestamp="20221006 15:58:58.231" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221006 15:58:55.230" endtime="20221006 15:58:58.231"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>${ubicador}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<<<<<<< HEAD
 <msg timestamp="20221006 15:04:22.245" level="INFO">Typing text '92' into text field 'xpath=//input[@id="idOximetry"]'.</msg>
 <status status="PASS" starttime="20221006 15:04:22.244" endtime="20221006 15:04:22.347"/>
 </kw>
 <status status="PASS" starttime="20221006 15:04:19.241" endtime="20221006 15:04:22.348"/>
+=======
+<msg timestamp="20221006 15:58:58.232" level="INFO">Typing text '92' into text field 'xpath=//input[@id="idOximetry"]'.</msg>
+<status status="PASS" starttime="20221006 15:58:58.232" endtime="20221006 15:58:58.331"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:55.227" endtime="20221006 15:58:58.331"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="-CLICK ELEMENTO-" library="test_keywords">
 <arg>${Sntms['boton_Continue']}</arg>
 <kw name="Click Element" library="Selenium2Library">
 <arg>${elemento}</arg>
 <doc>Click the element identified by ``locator``.</doc>
+<<<<<<< HEAD
 <msg timestamp="20221006 15:04:22.350" level="INFO">Clicking element 'xpath=//button[@class="btn primario firstForm"]'.</msg>
 <status status="PASS" starttime="20221006 15:04:22.350" endtime="20221006 15:04:22.430"/>
 </kw>
 <status status="PASS" starttime="20221006 15:04:22.348" endtime="20221006 15:04:22.430"/>
+=======
+<msg timestamp="20221006 15:58:58.334" level="INFO">Clicking element 'xpath=//button[@class="btn primario firstForm"]'.</msg>
+<status status="PASS" starttime="20221006 15:58:58.333" endtime="20221006 15:58:58.413"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:58.332" endtime="20221006 15:58:58.414"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="-VALIDAR ELEMENTOS-" library="test_keywords">
 <arg>${EndPage}</arg>
@@ -841,7 +1359,11 @@
 <kw name="Scroll Element Into View" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
+<<<<<<< HEAD
 <status status="PASS" starttime="20221006 15:04:22.432" endtime="20221006 15:04:22.719"/>
+=======
+<status status="PASS" starttime="20221006 15:58:58.415" endtime="20221006 15:58:58.704"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>Wait Until Element is Visible</arg>
@@ -850,9 +1372,15 @@
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
+<<<<<<< HEAD
 <status status="PASS" starttime="20221006 15:04:22.719" endtime="20221006 15:04:22.743"/>
 </kw>
 <status status="PASS" starttime="20221006 15:04:22.719" endtime="20221006 15:04:22.743"/>
+=======
+<status status="PASS" starttime="20221006 15:58:58.705" endtime="20221006 15:58:58.728"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:58.705" endtime="20221006 15:58:58.728"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <arg>capture element screenshot</arg>
@@ -861,6 +1389,7 @@
 <kw name="Capture Element Screenshot" library="Selenium2Library">
 <arg>${a1['${element}']}</arg>
 <doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<<<<<<< HEAD
 <msg timestamp="20221006 15:04:22.806" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-128.png"&gt;&lt;img src="selenium-element-screenshot-128.png" width="400px"&gt;&lt;/a&gt;</msg>
 <status status="PASS" starttime="20221006 15:04:22.744" endtime="20221006 15:04:22.807"/>
 </kw>
@@ -871,40 +1400,86 @@
 <status status="PASS" starttime="20221006 15:04:22.431" endtime="20221006 15:04:22.807"/>
 </for>
 <status status="PASS" starttime="20221006 15:04:22.430" endtime="20221006 15:04:22.807"/>
+=======
+<msg timestamp="20221006 15:58:58.809" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-276.png"&gt;&lt;img src="selenium-element-screenshot-276.png" width="400px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221006 15:58:58.729" endtime="20221006 15:58:58.809"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:58.728" endtime="20221006 15:58:58.809"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:58.415" endtime="20221006 15:58:58.809"/>
+</iter>
+<status status="PASS" starttime="20221006 15:58:58.415" endtime="20221006 15:58:58.809"/>
+</for>
+<status status="PASS" starttime="20221006 15:58:58.414" endtime="20221006 15:58:58.809"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="Select From List By Index" library="Selenium2Library">
 <arg>whyIsolation</arg>
 <arg>3</arg>
 <doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<<<<<<< HEAD
 <msg timestamp="20221006 15:04:22.808" level="INFO">Selecting options from selection list 'whyIsolation' by index 3.</msg>
 <status status="PASS" starttime="20221006 15:04:22.807" endtime="20221006 15:04:22.938"/>
+=======
+<msg timestamp="20221006 15:58:58.810" level="INFO">Selecting options from selection list 'whyIsolation' by index 3.</msg>
+<status status="PASS" starttime="20221006 15:58:58.810" endtime="20221006 15:58:58.937"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="-CLICK ELEMENTO-" library="test_keywords">
 <arg>${EndPage['boton_Continue']}</arg>
 <kw name="Click Element" library="Selenium2Library">
 <arg>${elemento}</arg>
 <doc>Click the element identified by ``locator``.</doc>
+<<<<<<< HEAD
 <msg timestamp="20221006 15:04:22.940" level="INFO">Clicking element 'xpath=//button[@class="btn primario lastForm"]'.</msg>
 <status status="PASS" starttime="20221006 15:04:22.940" endtime="20221006 15:04:22.999"/>
 </kw>
 <status status="PASS" starttime="20221006 15:04:22.938" endtime="20221006 15:04:23.000"/>
+=======
+<msg timestamp="20221006 15:58:58.940" level="INFO">Clicking element 'xpath=//button[@class="btn primario lastForm"]'.</msg>
+<status status="PASS" starttime="20221006 15:58:58.940" endtime="20221006 15:58:58.997"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:58.938" endtime="20221006 15:58:58.997"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>3s</arg>
+<arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
+<<<<<<< HEAD
 <msg timestamp="20221006 15:04:26.001" level="INFO">Slept 3 seconds</msg>
 <status status="PASS" starttime="20221006 15:04:23.000" endtime="20221006 15:04:26.001"/>
+=======
+<msg timestamp="20221006 15:59:03.998" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221006 15:58:58.998" endtime="20221006 15:59:03.999"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${EndPage2['score_card']}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221006 15:59:03.999" endtime="20221006 15:59:04.028"/>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221006 15:59:04.204" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-46.png"&gt;&lt;img src="selenium-screenshot-46.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221006 15:59:04.028" endtime="20221006 15:59:04.204"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="-CERRAR TODOS LOS NAVEGADORES-" library="test_keywords">
 <kw name="Close All Browsers" library="Selenium2Library">
 <doc>Closes all open browsers and resets the browser cache.</doc>
+<<<<<<< HEAD
 <status status="PASS" starttime="20221006 15:04:26.002" endtime="20221006 15:04:26.063"/>
 </kw>
 <status status="PASS" starttime="20221006 15:04:26.002" endtime="20221006 15:04:26.063"/>
+=======
+<status status="PASS" starttime="20221006 15:59:04.205" endtime="20221006 15:59:04.265"/>
+</kw>
+<status status="PASS" starttime="20221006 15:59:04.204" endtime="20221006 15:59:04.265"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </kw>
 <kw name="-TERMINAR CONFIGURACIÓN TESTCASE-" library="test_keywords" type="TEARDOWN">
 <kw name="Close All Browsers" library="Selenium2Library">
 <doc>Closes all open browsers and resets the browser cache.</doc>
+<<<<<<< HEAD
 <status status="PASS" starttime="20221006 15:04:26.064" endtime="20221006 15:04:26.065"/>
 </kw>
 <status status="PASS" starttime="20221006 15:04:26.063" endtime="20221006 15:04:26.065"/>
@@ -913,6 +1488,16 @@
 </test>
 <doc>registro automatico de fcs</doc>
 <status status="PASS" starttime="20221006 15:03:44.380" endtime="20221006 15:04:26.067"/>
+=======
+<status status="PASS" starttime="20221006 15:59:04.266" endtime="20221006 15:59:04.267"/>
+</kw>
+<status status="PASS" starttime="20221006 15:59:04.266" endtime="20221006 15:59:04.267"/>
+</kw>
+<status status="PASS" starttime="20221006 15:58:42.319" endtime="20221006 15:59:04.267"/>
+</test>
+<doc>registro automatico de fcs</doc>
+<status status="PASS" starttime="20221006 15:58:20.094" endtime="20221006 15:59:04.269"/>
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 </suite>
 <statistics>
 <total>

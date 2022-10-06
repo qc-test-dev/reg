@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 /home/usr_admin/reg/reg/resources/resultados/*
 C:\Users\Hitss\Desktop\reg\reg\.idea
 C:\Users\Hitss\Desktop\reg\venv
+=======
+/home/usr_admin/reg/reg/resources/resultados/*.jpg
+/home/usr_admin/reg/reg/resources/resultados/*.png
+>>>>>>> ca08b0719eb907ed0a130c55f9e138d96ab595cc
 main.py
 *.png
 *.jpg
