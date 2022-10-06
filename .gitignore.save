@@ -1,0 +1,5 @@
+main.py
+*.png
+*.jpg
+*.pyc
+testCases/testvir/*
